@@ -1,0 +1,5 @@
+inherit_from: configs/new_configs/sphere_height_96.yaml
+test:
+  model_file: /cluster/scratch/demtsev/occupancy_networks/out/pointcloud/dpoc/sphere_height_96_best.pt
+generation:
+  generation_dir: generation_sphere_height_96

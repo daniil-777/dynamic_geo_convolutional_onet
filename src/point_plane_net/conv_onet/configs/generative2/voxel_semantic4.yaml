@@ -1,0 +1,65 @@
+method: onet
+data:
+  input_type: pointcloud
+  path: data/RoomDataset3
+  watertight_path: data/watertight
+  pointcloud_n: 10000
+  pointcloud_noise: 0.0
+  points_subsample: 2048 
+  points_online_sample: False
+  points_file: points_iou
+  points_iou_file: points_iou
+  pointcloud_file: pointcloud
+  points_unpackbits: true
+  multi_files: 10
+  voxels_file: null
+  overfit: False
+  overfit_num: 0
+  padding: 0.1
+  use_semantic_map: true
+model:
+  decoder: simple_conv
+  decoder_kwargs:
+    n_conv_layer: 6
+    plane_type: ['grid']
+  encoder: unet
+  encoder_kwargs:
+    num_classes: 32
+    in_channels: 5
+    start_filts: 8
+    depth: 7
+  encoder_latent: pointnet_conv2
+  encoder_latent_kwargs:
+    hidden_dim: 32
+    plane_resolution: 64
+    n_conv_layer: 6
+    plane_type: ['grid'] #['xz', 'xy', 'yz']
+  c_dim: 32
+  z_dim: 32
+training:
+  out_dir: out/generative2/voxel_semantic4
+  batch_size: 32
+  model_selection_metric: loss
+  model_selection_mode: minimize
+  print_every: 10
+  visualize_every: 100000000
+  validate_every: 10000
+  checkpoint_every: 500
+  backup_every: 50000
+  n_workers: 8
+  n_workers_val: 4
+  beta_vae: 0.1
+test:
+  threshold: 0.2
+  eval_mesh: true
+  eval_pointcloud: false
+  model_file: model.pt
+generation:
+  batch_size: 100000
+  vis_n_outputs: 2
+  resolution_0: 32
+  upsampling_steps: 2
+  refine: false
+  n_x: 128
+  n_z: 1
+  use_sampling: True

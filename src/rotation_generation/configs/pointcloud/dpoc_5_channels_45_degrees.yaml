@@ -1,0 +1,8 @@
+inherit_from: configs/pointcloud/dpoc.yaml
+model : 
+  encoder_kwargs:
+    hidden_dim: 32
+    n_channels: 5
+generation:
+  generation_dir: generation_5plane_45_degrees
+degrees: 45

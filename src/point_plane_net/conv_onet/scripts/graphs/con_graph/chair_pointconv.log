@@ -1,0 +1,792 @@
+Sender: LSF System <lsfadmin@lo-s4-038>
+Subject: Job 4353538: <python train_all.py configs/pointcloud/chair_pointconv.yaml> in cluster <leonhard> Exited
+
+Job <python train_all.py configs/pointcloud/chair_pointconv.yaml> was submitted from host <lo-login-01> by user <sonpeng> in cluster <leonhard> at Fri Feb 21 16:10:04 2020
+Job was executed on host(s) <10*lo-s4-038>, in queue <gpu.24h>, as user <sonpeng> in cluster <leonhard> at Fri Feb 21 16:10:19 2020
+</cluster/home/sonpeng> was used as the home directory.
+</cluster/home/sonpeng/scalable_implicit_reconstruction> was used as the working directory.
+Started at Fri Feb 21 16:10:19 2020
+Terminated at Sat Feb 22 01:57:03 2020
+Results reported at Sat Feb 22 01:57:03 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python train_all.py configs/pointcloud/chair_pointconv.yaml
+------------------------------------------------------------
+
+Exited with exit code 141.
+
+Resource usage summary:
+
+    CPU time :                                   63634.48 sec.
+    Max Memory :                                 10240 MB
+    Average Memory :                             9933.46 MB
+    Total Requested Memory :                     10240.00 MB
+    Delta Memory :                               0.00 MB
+    Max Swap :                                   2010 MB
+    Max Processes :                              23
+    Max Threads :                                90
+    Run time :                                   35167 sec.
+    Turnaround time :                            35219 sec.
+
+The output (if any) follows:
+
+Current best validation metric (iou): -inf
+Total number of parameters: 2074081
+output path:  out/baseline/gaussian_val02
+[Epoch 06] it=1000, loss=158.5266, time: 897.97
+[Epoch 11] it=2000, loss=174.7186, time: 1706.06
+[Epoch 16] it=3000, loss=106.6236, time: 2530.30
+[Epoch 21] it=4000, loss=110.6791, time: 3353.12
+[Epoch 26] it=5000, loss=109.6765, time: 4163.51
+[Epoch 31] it=6000, loss=128.4488, time: 4975.85
+[Epoch 36] it=7000, loss=102.1341, time: 5802.27
+[Epoch 41] it=8000, loss=115.8351, time: 6615.34
+[Epoch 46] it=9000, loss=113.0725, time: 7433.20
+[Epoch 51] it=10000, loss=120.1721, time: 8251.20
+Visualizing
+GPU memory usage:  5183
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.5695
+New best model (loss 0.5695)
+[Epoch 56] it=11000, loss=96.8822, time: 9528.14
+[Epoch 61] it=12000, loss=95.1525, time: 10343.22
+[Epoch 66] it=13000, loss=117.1335, time: 11161.89
+[Epoch 71] it=14000, loss=91.8206, time: 11976.91
+[Epoch 76] it=15000, loss=83.4694, time: 12791.83
+[Epoch 81] it=16000, loss=113.6902, time: 13613.90
+[Epoch 86] it=17000, loss=120.5018, time: 14431.36
+[Epoch 91] it=18000, loss=102.5065, time: 15242.90
+[Epoch 96] it=19000, loss=126.8993, time: 16053.10
+[Epoch 102] it=20000, loss=100.6764, time: 16862.70
+Visualizing
+GPU memory usage:  4893
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.6258
+New best model (loss 0.6258)
+[Epoch 107] it=21000, loss=85.0959, time: 18111.51
+[Epoch 112] it=22000, loss=87.2945, time: 18929.27
+[Epoch 117] it=23000, loss=79.8401, time: 19741.99
+[Epoch 122] it=24000, loss=81.6972, time: 20546.85
+[Epoch 127] it=25000, loss=90.1569, time: 21357.48
+[Epoch 132] it=26000, loss=78.2930, time: 22170.06
+[Epoch 137] it=27000, loss=70.9586, time: 22988.88
+[Epoch 142] it=28000, loss=59.5950, time: 23803.89
+[Epoch 147] it=29000, loss=86.2963, time: 24614.57
+[Epoch 152] it=30000, loss=70.4236, time: 25422.53
+Visualizing
+GPU memory usage:  4939
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.6530
+New best model (loss 0.6530)
+[Epoch 157] it=31000, loss=100.2175, time: 26697.70
+[Epoch 162] it=32000, loss=117.3560, time: 27506.38
+[Epoch 167] it=33000, loss=95.9271, time: 28325.23
+[Epoch 172] it=34000, loss=95.1933, time: 29140.43
+[Epoch 177] it=35000, loss=65.4793, time: 29952.78
+[Epoch 182] it=36000, loss=71.4571, time: 30762.76
+[Epoch 187] it=37000, loss=77.2393, time: 31577.97
+[Epoch 192] it=38000, loss=68.2790, time: 32392.87
+[Epoch 197] it=39000, loss=63.0583, time: 33214.74
+[Epoch 203] it=40000, loss=89.3130, time: 34112.42
+=> Loading checkpoint from local file...                                                                                                 
+Current best validation metric (iou): 0.65303606                 
+Total number of parameters: 2074081                                                                                                      
+[Epoch 209] it=41000, loss=59.9470, time: 478.13         
+[Epoch 214] it=42000, loss=67.7640, time: 935.67                                                                      
+Saving checkpoint                                                                                                                            
+[Epoch 219] it=43000, loss=83.2880, time: 1403.29                                                                 
+[Epoch 224] it=44000, loss=88.0126, time: 1873.00                                                                                        
+Saving checkpoint                                                                                                         
+[Epoch 229] it=45000, loss=64.2291, time: 2333.27                                                                                        
+[Epoch 234] it=46000, loss=80.5683, time: 2850.34                                                                
+Saving checkpoint                                                                                                                        
+[Epoch 239] it=47000, loss=66.0171, time: 3310.60                                                                
+[Epoch 244] it=48000, loss=65.8802, time: 3766.46                                                
+Saving checkpoint                                                                                                              
+[Epoch 249] it=49000, loss=47.5620, time: 4223.42       
+[Epoch 254] it=50000, loss=81.8912, time: 4680.84                                                                                        
+Visualizing                                                                        
+GPU memory usage:  6322                                                                                                                 
+Saving checkpoint                                                                         
+Backup checkpoint                                                                                                                        
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:01<00:00,  2.78it/s]                      
+Validation metric (iou): 0.6524                                       
+[Epoch 259] it=51000, loss=63.7528, time: 5379.86                                                               
+[Epoch 264] it=52000, loss=65.9212, time: 5846.21                                             
+Saving checkpoint                                                                                                       
+[Epoch 269] it=53000, loss=73.4866, time: 6302.98  
+[Epoch 274] it=54000, loss=66.9152, time: 6763.58                                                                                        
+Saving checkpoint                                                                                           
+[Epoch 279] it=55000, loss=59.5315, time: 7251.49                                                                                        
+[Epoch 284] it=56000, loss=64.3747, time: 7726.97        
+Saving checkpoint                                                                                                              
+[Epoch 289] it=57000, loss=69.3917, time: 8190.46                                                                                        
+[Epoch 294] it=58000, loss=59.7910, time: 8684.79                                                                    
+Saving checkpoint                                                             
+[Epoch 299] it=59000, loss=60.6014, time: 9167.17                                                                              
+[Epoch 305] it=60000, loss=66.6062, time: 9643.34                                                                                        
+Visualizing                                                                                                                 
+GPU memory usage:  6151                                                                                                                  
+Saving checkpoint                                                                                           
+Backup checkpoint                                                                                                                        
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:13<00:00,  2.76it/s]
+Validation metric (iou): 0.6742
+New best model (loss 0.6742)
+[Epoch 310] it=61000, loss=69.0736, time: 10421.91
+[Epoch 315] it=62000, loss=63.4199, time: 10921.78
+Saving checkpoint
+[Epoch 320] it=63000, loss=63.5862, time: 11384.60
+[Epoch 325] it=64000, loss=85.3823, time: 11844.83
+Saving checkpoint
+[Epoch 330] it=65000, loss=65.7641, time: 12301.58
+[Epoch 335] it=66000, loss=61.3533, time: 12776.85
+Saving checkpoint
+[Epoch 340] it=67000, loss=57.9235, time: 13244.77
+[Epoch 345] it=68000, loss=69.7298, time: 13705.14
+Saving checkpoint
+[Epoch 350] it=69000, loss=58.5665, time: 14161.17
+[Epoch 355] it=70000, loss=73.3650, time: 14619.50
+Visualizing
+GPU memory usage:  6054
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:02<00:00,  2.80it/s]
+Validation metric (iou): 0.6901
+New best model (loss 0.6901)
+[Epoch 360] it=71000, loss=55.1201, time: 15349.96
+[Epoch 365] it=72000, loss=66.0989, time: 15904.60
+Saving checkpoint
+[Epoch 370] it=73000, loss=60.6736, time: 16423.18
+[Epoch 375] it=74000, loss=65.3282, time: 16887.69
+Saving checkpoint
+[Epoch 380] it=75000, loss=101.2028, time: 17354.25
+[Epoch 385] it=76000, loss=61.5713, time: 17834.66
+Saving checkpoint
+[Epoch 390] it=77000, loss=48.2479, time: 18310.11
+[Epoch 395] it=78000, loss=48.9656, time: 18849.21
+Saving checkpoint
+[Epoch 400] it=79000, loss=63.7658, time: 19383.42
+[Epoch 406] it=80000, loss=52.5340, time: 19869.77
+Visualizing
+GPU memory usage:  6079
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:10<00:00,  2.72it/s]
+Validation metric (iou): 0.7082
+New best model (loss 0.7082)
+[Epoch 411] it=81000, loss=49.5575, time: 20592.61
+[Epoch 416] it=82000, loss=69.1411, time: 21052.06
+Saving checkpoint
+[Epoch 421] it=83000, loss=59.5111, time: 21510.26
+[Epoch 426] it=84000, loss=62.1435, time: 21978.59
+Saving checkpoint
+[Epoch 431] it=85000, loss=74.9348, time: 22442.48
+[Epoch 436] it=86000, loss=59.6856, time: 22942.26
+Saving checkpoint
+[Epoch 441] it=87000, loss=69.2972, time: 23504.36
+[Epoch 446] it=88000, loss=51.1648, time: 24028.57
+Saving checkpoint
+[Epoch 451] it=89000, loss=53.8639, time: 24513.76
+[Epoch 456] it=90000, loss=57.0371, time: 25055.19
+Visualizing
+GPU memory usage:  7748
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [05:00<00:00,  2.37it/s]
+Validation metric (iou): 0.6903
+[Epoch 461] it=91000, loss=45.9149, time: 25852.26
+[Epoch 466] it=92000, loss=71.7455, time: 26309.82
+Saving checkpoint
+[Epoch 471] it=93000, loss=52.5884, time: 26775.37
+[Epoch 476] it=94000, loss=43.6007, time: 27240.06
+Saving checkpoint
+[Epoch 481] it=95000, loss=53.1897, time: 27696.75
+[Epoch 486] it=96000, loss=67.0574, time: 28154.60
+Saving checkpoint
+[Epoch 491] it=97000, loss=55.5467, time: 28611.32
+[Epoch 496] it=98000, loss=46.5876, time: 29067.79
+Saving checkpoint
+[Epoch 501] it=99000, loss=58.0006, time: 29527.93
+[Epoch 507] it=100000, loss=50.1273, time: 29987.73
+Visualizing
+GPU memory usage:  6134
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:04<00:00,  2.76it/s]
+Validation metric (iou): 0.6986
+[Epoch 512] it=101000, loss=57.3600, time: 30695.22
+[Epoch 517] it=102000, loss=69.9259, time: 31154.15
+Saving checkpoint
+[Epoch 522] it=103000, loss=65.9549, time: 31614.15
+[Epoch 527] it=104000, loss=72.4684, time: 32074.96
+Saving checkpoint
+[Epoch 532] it=105000, loss=61.5453, time: 32534.03
+[Epoch 537] it=106000, loss=60.6214, time: 32993.97
+Saving checkpoint
+[Epoch 542] it=107000, loss=55.5756, time: 33452.68
+[Epoch 547] it=108000, loss=68.3419, time: 33911.57
+Saving checkpoint
+[Epoch 552] it=109000, loss=73.3503, time: 34370.42                                                                                                                                                                                                                      [261/1730]
+[Epoch 557] it=110000, loss=59.1456, time: 34829.24
+Visualizing
+GPU memory usage:  6124
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:00<00:00,  2.85it/s]
+Validation metric (iou): 0.7049
+[Epoch 562] it=111000, loss=56.2931, time: 35529.66
+[Epoch 567] it=112000, loss=67.9340, time: 35987.42
+Saving checkpoint
+[Epoch 572] it=113000, loss=52.9019, time: 36446.01
+[Epoch 577] it=114000, loss=54.9164, time: 36905.30
+Saving checkpoint
+[Epoch 582] it=115000, loss=52.2806, time: 37365.09
+[Epoch 587] it=116000, loss=55.1936, time: 37824.74
+Saving checkpoint
+[Epoch 592] it=117000, loss=59.1230, time: 38283.32
+[Epoch 597] it=118000, loss=70.9714, time: 38742.01
+Saving checkpoint
+[Epoch 602] it=119000, loss=52.6917, time: 39200.80
+[Epoch 608] it=120000, loss=46.2713, time: 39661.90
+Visualizing
+GPU memory usage:  6139
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:03<00:00,  2.83it/s]
+Validation metric (iou): 0.7044
+[Epoch 613] it=121000, loss=51.4305, time: 40365.32
+[Epoch 618] it=122000, loss=67.7547, time: 40824.73
+Saving checkpoint
+[Epoch 623] it=123000, loss=40.0223, time: 41283.52
+[Epoch 628] it=124000, loss=51.2914, time: 41741.47
+Saving checkpoint
+[Epoch 633] it=125000, loss=56.8162, time: 42201.48
+[Epoch 638] it=126000, loss=53.9546, time: 42660.88
+Saving checkpoint
+[Epoch 643] it=127000, loss=65.6847, time: 43119.33
+[Epoch 648] it=128000, loss=47.1201, time: 43577.76
+Saving checkpoint
+[Epoch 653] it=129000, loss=55.8814, time: 44033.90
+[Epoch 658] it=130000, loss=63.7027, time: 44490.09
+Visualizing
+GPU memory usage:  6106
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:01<00:00,  2.86it/s]
+Validation metric (iou): 0.7195
+New best model (loss 0.7195)
+[Epoch 663] it=131000, loss=55.8717, time: 45189.12
+[Epoch 668] it=132000, loss=46.7790, time: 45645.78
+Saving checkpoint
+[Epoch 673] it=133000, loss=54.4307, time: 46103.28
+[Epoch 678] it=134000, loss=53.6024, time: 46559.42
+Saving checkpoint
+[Epoch 683] it=135000, loss=57.3863, time: 47015.66
+[Epoch 688] it=136000, loss=67.1411, time: 47472.23
+Saving checkpoint
+[Epoch 693] it=137000, loss=60.1475, time: 47928.81
+[Epoch 698] it=138000, loss=58.0221, time: 48386.21
+Saving checkpoint
+[Epoch 703] it=139000, loss=60.9396, time: 48842.04
+[Epoch 709] it=140000, loss=54.8270, time: 49298.82
+Visualizing
+GPU memory usage:  6113
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [03:59<00:00,  2.81it/s]
+Validation metric (iou): 0.7153
+[Epoch 714] it=141000, loss=45.9792, time: 49996.17
+[Epoch 719] it=142000, loss=80.3006, time: 50451.99
+Saving checkpoint
+[Epoch 724] it=143000, loss=54.1618, time: 50907.99
+[Epoch 729] it=144000, loss=64.2870, time: 51363.67
+Saving checkpoint                                                                                                                                                                                                                                                        [187/1730]
+[Epoch 734] it=145000, loss=59.3854, time: 51820.51                                                                                                                                                                                                                                
+[Epoch 739] it=146000, loss=47.9985, time: 52277.58                                                                                                                                                                                                                                
+Saving checkpoint                                                                                                                                                                                                                                                                  
+[Epoch 744] it=147000, loss=54.2480, time: 52733.49                                                                                                                                                                                                                                
+[Epoch 749] it=148000, loss=49.2100, time: 53189.29                                                                                                                                                                                                                                
+Saving checkpoint                                                                                                                                                                                                                                                                  
+[Epoch 754] it=149000, loss=52.8599, time: 53644.59
+[Epoch 759] it=150000, loss=58.5779, time: 54100.44
+Visualizing
+GPU memory usage:  6093
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:02<00:00,  2.79it/s]
+Validation metric (iou): 0.7119
+[Epoch 764] it=151000, loss=55.3494, time: 54800.56
+[Epoch 769] it=152000, loss=65.6872, time: 55256.33
+Saving checkpoint
+[Epoch 774] it=153000, loss=43.2087, time: 55711.97
+[Epoch 779] it=154000, loss=44.8923, time: 56169.43
+Saving checkpoint
+[Epoch 784] it=155000, loss=55.3799, time: 56625.63
+[Epoch 789] it=156000, loss=63.8488, time: 57081.98
+Saving checkpoint
+[Epoch 794] it=157000, loss=40.2174, time: 57538.75
+[Epoch 799] it=158000, loss=50.1441, time: 57994.77
+Saving checkpoint
+[Epoch 805] it=159000, loss=48.0918, time: 58451.57
+[Epoch 810] it=160000, loss=45.6775, time: 58907.47
+Visualizing
+GPU memory usage:  6068
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:01<00:00,  2.85it/s]
+Validation metric (iou): 0.7262
+New best model (loss 0.7262)
+[Epoch 815] it=161000, loss=52.2786, time: 59606.52
+[Epoch 820] it=162000, loss=60.8547, time: 60063.40
+Saving checkpoint
+[Epoch 825] it=163000, loss=57.0886, time: 60520.95
+[Epoch 830] it=164000, loss=45.5174, time: 60977.52
+Saving checkpoint
+[Epoch 835] it=165000, loss=46.3216, time: 61434.07
+[Epoch 840] it=166000, loss=54.7441, time: 61891.31
+Saving checkpoint
+[Epoch 845] it=167000, loss=51.5035, time: 62347.21
+[Epoch 850] it=168000, loss=61.5207, time: 62804.47
+Saving checkpoint
+[Epoch 855] it=169000, loss=52.6707, time: 63261.69
+[Epoch 860] it=170000, loss=39.4302, time: 63718.31
+Visualizing
+GPU memory usage:  6101
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:01<00:00,  2.78it/s]
+Validation metric (iou): 0.7163
+[Epoch 865] it=171000, loss=50.4189, time: 64417.98
+[Epoch 870] it=172000, loss=57.7958, time: 64874.33
+Saving checkpoint
+[Epoch 875] it=173000, loss=66.2872, time: 65330.89
+[Epoch 880] it=174000, loss=58.3340, time: 65786.80
+Saving checkpoint
+[Epoch 885] it=175000, loss=58.1924, time: 66243.74
+[Epoch 890] it=176000, loss=73.4546, time: 66699.39
+Saving checkpoint
+[Epoch 895] it=177000, loss=48.5269, time: 67156.19
+[Epoch 900] it=178000, loss=64.1414, time: 67613.17
+Saving checkpoint
+[Epoch 906] it=179000, loss=52.2735, time: 68069.72
+[Epoch 911] it=180000, loss=65.0715, time: 68525.84
+Visualizing
+GPU memory usage:  6079
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:01<00:00,  2.83it/s]                                                                                                                                [113/1730]
+Validation metric (iou): 0.7262
+[Epoch 916] it=181000, loss=43.1909, time: 69225.11
+[Epoch 921] it=182000, loss=49.1519, time: 69681.28
+Saving checkpoint
+[Epoch 926] it=183000, loss=52.3157, time: 70137.82
+[Epoch 931] it=184000, loss=42.8957, time: 70594.61
+Saving checkpoint
+[Epoch 936] it=185000, loss=51.6775, time: 71051.05
+[Epoch 941] it=186000, loss=56.3508, time: 71507.12
+Saving checkpoint
+[Epoch 946] it=187000, loss=47.2485, time: 71962.70
+[Epoch 951] it=188000, loss=51.1039, time: 72419.93
+Saving checkpoint
+[Epoch 956] it=189000, loss=52.8837, time: 72876.46
+[Epoch 961] it=190000, loss=42.6191, time: 73332.88
+Visualizing
+GPU memory usage:  6116
+Saving checkpoint
+Backup checkpoint
+100%|████████████████████████████████████████| 677/677 [04:03<00:00,  2.81it/s]
+Validation metric (iou): 0.7216
+[Epoch 966] it=191000, loss=55.0194, time: 74034.53
+[Epoch 971] it=192000, loss=47.1625, time: 74491.10
+Saving checkpoint
+[Epoch 976] it=193000, loss=40.5630, time: 74947.51
+[Epoch 981] it=194000, loss=57.8130, time: 75403.45
+Saving checkpoint
+[Epoch 986] it=195000, loss=39.3342, time: 75859.60
+[Epoch 991] it=196000, loss=48.5043, time: 76316.27
+Saving checkpoint
+[Epoch 996] it=197000, loss=33.0725, time: 76773.49
+[Epoch 1001] it=198000, loss=36.3234, time: 77230.44
+Saving checkpoint
+[Epoch 1007] it=199000, loss=39.2702, time: 77687.50
+[Epoch 1012] it=200000, loss=47.5634, time: 78144.37
+Visualizing
+GPU memory usage:  6047
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:01<00:00,  2.79it/s]
+Validation metric (iou): 0.7127
+[Epoch 1017] it=201000, loss=65.0358, time: 78844.08
+[Epoch 1022] it=202000, loss=53.6448, time: 79300.89
+Saving checkpoint
+[Epoch 1027] it=203000, loss=53.0607, time: 79757.09
+[Epoch 1032] it=204000, loss=43.1327, time: 80214.17
+Saving checkpoint
+[Epoch 1037] it=205000, loss=50.9046, time: 80671.39
+[Epoch 1042] it=206000, loss=41.8373, time: 81128.38
+Saving checkpoint
+[Epoch 1047] it=207000, loss=47.8786, time: 81585.20
+[Epoch 1052] it=208000, loss=58.8372, time: 82041.20
+Saving checkpoint
+[Epoch 1057] it=209000, loss=50.9270, time: 82497.66
+[Epoch 1062] it=210000, loss=60.1428, time: 82953.83
+Visualizing
+GPU memory usage:  6009
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:01<00:00,  2.79it/s]
+Validation metric (iou): 0.7306
+New best model (loss 0.7306)
+[Epoch 1067] it=211000, loss=47.9768, time: 83653.01
+[Epoch 1072] it=212000, loss=52.1406, time: 84109.71
+Saving checkpoint
+[Epoch 1077] it=213000, loss=52.3599, time: 84566.89
+[Epoch 1082] it=214000, loss=51.5825, time: 85024.05
+Saving checkpoint
+[Epoch 1087] it=215000, loss=57.8164, time: 85481.78
+[Epoch 1092] it=216000, loss=55.3340, time: 85938.26
+Saving checkpoint
+[Epoch 1097] it=217000, loss=51.1947, time: 86394.02
+[Epoch 1102] it=218000, loss=41.9446, time: 86850.65
+Saving checkpoint                                                                                                                                                                                                                                                         [39/1730]
+[Epoch 1108] it=219000, loss=37.1241, time: 87307.49
+[Epoch 1113] it=220000, loss=56.2941, time: 87763.17
+Visualizing
+GPU memory usage:  6086
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:04<00:00,  2.79it/s]
+Validation metric (iou): 0.7203
+[Epoch 1118] it=221000, loss=52.1186, time: 88467.55
+[Epoch 1123] it=222000, loss=38.3981, time: 88923.69
+Saving checkpoint
+[Epoch 1128] it=223000, loss=44.3261, time: 89380.52
+[Epoch 1133] it=224000, loss=50.8328, time: 89837.34
+Saving checkpoint
+[Epoch 1138] it=225000, loss=50.0646, time: 90293.48
+[Epoch 1143] it=226000, loss=55.0113, time: 90750.70
+Saving checkpoint
+[Epoch 1148] it=227000, loss=45.5249, time: 91207.15
+[Epoch 1153] it=228000, loss=47.1082, time: 91663.33
+Saving checkpoint
+[Epoch 1158] it=229000, loss=61.9098, time: 92120.71
+[Epoch 1163] it=230000, loss=57.2096, time: 92578.19
+Visualizing
+GPU memory usage:  6057
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:00<00:00,  2.86it/s]
+Validation metric (iou): 0.7183
+[Epoch 1168] it=231000, loss=36.7161, time: 93278.04
+[Epoch 1173] it=232000, loss=59.2483, time: 93734.40
+Saving checkpoint
+[Epoch 1178] it=233000, loss=43.0085, time: 94191.73
+[Epoch 1183] it=234000, loss=47.6547, time: 94648.23
+Saving checkpoint
+[Epoch 1188] it=235000, loss=48.5824, time: 95104.79
+[Epoch 1193] it=236000, loss=39.0697, time: 95561.20
+Saving checkpoint
+[Epoch 1198] it=237000, loss=39.2862, time: 96017.71
+[Epoch 1203] it=238000, loss=51.5917, time: 96474.79
+Saving checkpoint
+[Epoch 1209] it=239000, loss=51.9743, time: 96932.48
+[Epoch 1214] it=240000, loss=44.6463, time: 97388.36
+Visualizing
+GPU memory usage:  6066
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:05<00:00,  2.78it/s]
+Validation metric (iou): 0.7317
+New best model (loss 0.7317)
+[Epoch 1219] it=241000, loss=45.9610, time: 98091.46
+[Epoch 1224] it=242000, loss=40.4059, time: 98547.46
+Saving checkpoint
+[Epoch 1229] it=243000, loss=55.6544, time: 99003.78
+[Epoch 1234] it=244000, loss=39.7808, time: 99461.03
+Saving checkpoint
+[Epoch 1239] it=245000, loss=38.7993, time: 99917.82
+[Epoch 1244] it=246000, loss=47.6867, time: 100374.22
+Saving checkpoint
+[Epoch 1249] it=247000, loss=35.2127, time: 100830.25
+[Epoch 1254] it=248000, loss=41.5988, time: 101287.31
+Saving checkpoint
+[Epoch 1259] it=249000, loss=51.5378, time: 101743.10
+[Epoch 1264] it=250000, loss=53.5700, time: 102199.05
+Visualizing
+GPU memory usage:  6067
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:06<00:00,  2.82it/s]
+Validation metric (iou): 0.7311
+[Epoch 1269] it=251000, loss=43.0128, time: 102919.09
+[Epoch 1274] it=252000, loss=52.0862, time: 103375.84
+Saving checkpoint
+[Epoch 1279] it=253000, loss=43.8430, time: 103833.24
+[Epoch 1284] it=254000, loss=42.7074, time: 104289.60
+Saving checkpoint
+[Epoch 1289] it=255000, loss=45.0979, time: 104745.80
+[Epoch 1294] it=256000, loss=34.1539, time: 105206.01
+Saving checkpoint
+[Epoch 1299] it=257000, loss=48.7007, time: 105664.38
+[Epoch 1305] it=258000, loss=46.2823, time: 106142.94
+Saving checkpoint
+[Epoch 1310] it=259000, loss=39.8295, time: 106639.37
+[Epoch 1315] it=260000, loss=52.9777, time: 107158.90
+Visualizing
+GPU memory usage:  6152
+Saving checkpoint
+Backup checkpoint
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 677/677 [04:09<00:00,  2.74it/s]
+Validation metric (iou): 0.7253 
+
+[Epoch 1321] it=261000, loss=41.7154, time: 558.98
+[Epoch 1326] it=262000, loss=44.7356, time: 1067.25
+[Epoch 1331] it=263000, loss=46.5063, time: 1576.37
+[Epoch 1336] it=264000, loss=48.8577, time: 2086.06
+[Epoch 1341] it=265000, loss=46.0572, time: 2595.60
+[Epoch 1346] it=266000, loss=43.2930, time: 3104.80
+[Epoch 1351] it=267000, loss=47.7401, time: 3614.66
+[Epoch 1356] it=268000, loss=44.5570, time: 4128.18
+[Epoch 1361] it=269000, loss=54.4128, time: 4642.62
+[Epoch 1366] it=270000, loss=44.7719, time: 5155.28
+Visualizing
+GPU memory usage:  5119
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7309
+[Epoch 1371] it=271000, loss=52.4419, time: 5978.81
+[Epoch 1376] it=272000, loss=40.3683, time: 6492.71
+[Epoch 1381] it=273000, loss=34.7077, time: 7007.85
+[Epoch 1386] it=274000, loss=52.8953, time: 7522.94
+[Epoch 1391] it=275000, loss=49.6224, time: 8035.95
+[Epoch 1396] it=276000, loss=49.6153, time: 8547.53
+[Epoch 1401] it=277000, loss=58.4801, time: 9059.55
+[Epoch 1406] it=278000, loss=42.2617, time: 9572.20
+[Epoch 1411] it=279000, loss=50.4955, time: 10082.96
+[Epoch 1417] it=280000, loss=43.9605, time: 10593.12
+Visualizing
+GPU memory usage:  5075
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7311
+[Epoch 1422] it=281000, loss=39.0875, time: 11408.82
+[Epoch 1427] it=282000, loss=61.8604, time: 11918.25
+[Epoch 1432] it=283000, loss=49.8631, time: 12428.21
+[Epoch 1437] it=284000, loss=39.2863, time: 12938.18
+[Epoch 1442] it=285000, loss=48.7664, time: 13449.45
+[Epoch 1447] it=286000, loss=50.8193, time: 13959.32
+[Epoch 1452] it=287000, loss=51.9593, time: 14468.89
+[Epoch 1457] it=288000, loss=47.5675, time: 14978.95
+[Epoch 1462] it=289000, loss=40.1514, time: 15489.10
+[Epoch 1467] it=290000, loss=44.5033, time: 15999.23
+Visualizing
+GPU memory usage:  5097
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7351
+New best model (loss 0.7351)
+[Epoch 1472] it=291000, loss=44.3222, time: 16818.07
+[Epoch 1477] it=292000, loss=43.5062, time: 17326.11
+[Epoch 1482] it=293000, loss=37.7897, time: 17833.14
+[Epoch 1487] it=294000, loss=57.9895, time: 18340.86
+[Epoch 1492] it=295000, loss=40.1888, time: 18849.02
+[Epoch 1497] it=296000, loss=45.8797, time: 19357.11
+[Epoch 1502] it=297000, loss=44.7371, time: 19864.99
+[Epoch 1507] it=298000, loss=60.9683, time: 20368.44
+[Epoch 1512] it=299000, loss=42.8733, time: 20872.74
+[Epoch 1518] it=300000, loss=48.5050, time: 21378.80
+Visualizing
+GPU memory usage:  5147
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7290
+[Epoch 1523] it=301000, loss=52.2653, time: 22184.57
+[Epoch 1528] it=302000, loss=49.4402, time: 22687.80
+[Epoch 1533] it=303000, loss=57.5329, time: 23190.01
+[Epoch 1538] it=304000, loss=63.4317, time: 23693.74
+[Epoch 1543] it=305000, loss=39.5970, time: 24197.78
+[Epoch 1548] it=306000, loss=46.4996, time: 24701.17
+[Epoch 1553] it=307000, loss=59.2135, time: 25204.65
+[Epoch 1558] it=308000, loss=37.4092, time: 25707.99
+[Epoch 1563] it=309000, loss=41.1810, time: 26211.31
+[Epoch 1568] it=310000, loss=49.6614, time: 26714.98
+Visualizing
+GPU memory usage:  5071
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7344
+[Epoch 1573] it=311000, loss=44.5906, time: 27519.45
+[Epoch 1578] it=312000, loss=41.4857, time: 28023.27
+[Epoch 1583] it=313000, loss=37.8937, time: 28526.61
+[Epoch 1588] it=314000, loss=59.1131, time: 29029.81
+[Epoch 1593] it=315000, loss=41.1916, time: 29533.40
+[Epoch 1598] it=316000, loss=43.0517, time: 30036.48
+[Epoch 1603] it=317000, loss=48.9118, time: 30539.79
+[Epoch 1608] it=318000, loss=41.5696, time: 31043.57
+[Epoch 1613] it=319000, loss=46.9506, time: 31547.51
+[Epoch 1619] it=320000, loss=65.4554, time: 32051.99
+Visualizing
+GPU memory usage:  5057
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7451
+New best model (loss 0.7451)
+[Epoch 1624] it=321000, loss=42.7693, time: 32855.33
+[Epoch 1629] it=322000, loss=38.9266, time: 33358.77
+[Epoch 1634] it=323000, loss=46.8453, time: 33861.90
+[Epoch 1639] it=324000, loss=46.4271, time: 34365.51
+[Epoch 1644] it=325000, loss=37.9453, time: 34868.85
+[Epoch 1649] it=326000, loss=47.9056, time: 35372.32
+[Epoch 1654] it=327000, loss=42.3594, time: 35875.61
+[Epoch 1659] it=328000, loss=40.6831, time: 36378.87
+[Epoch 1664] it=329000, loss=43.8972, time: 36882.24
+[Epoch 1669] it=330000, loss=40.0153, time: 37385.84
+Visualizing
+GPU memory usage:  5083
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7360
+[Epoch 1674] it=331000, loss=44.0720, time: 38189.13
+[Epoch 1679] it=332000, loss=53.3561, time: 38692.51
+[Epoch 1684] it=333000, loss=48.0752, time: 39195.93
+[Epoch 1689] it=334000, loss=57.5172, time: 39698.02
+[Epoch 1694] it=335000, loss=49.1350, time: 40201.33
+[Epoch 1699] it=336000, loss=38.1707, time: 40704.63
+[Epoch 1704] it=337000, loss=34.3723, time: 41207.44
+[Epoch 1709] it=338000, loss=43.9846, time: 41710.93
+[Epoch 1714] it=339000, loss=50.7783, time: 42214.20
+[Epoch 1720] it=340000, loss=42.5646, time: 42718.54
+Visualizing
+GPU memory usage:  5111
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7355
+[Epoch 1725] it=341000, loss=43.2194, time: 43522.31
+[Epoch 1730] it=342000, loss=47.2141, time: 44026.15
+[Epoch 1735] it=343000, loss=47.4261, time: 44529.48
+[Epoch 1740] it=344000, loss=52.8917, time: 45033.01
+[Epoch 1745] it=345000, loss=38.0940, time: 45536.68
+[Epoch 1750] it=346000, loss=42.5668, time: 46040.10
+[Epoch 1755] it=347000, loss=53.8638, time: 46543.83
+[Epoch 1760] it=348000, loss=62.5775, time: 47047.38
+[Epoch 1765] it=349000, loss=49.3893, time: 47551.10
+[Epoch 1770] it=350000, loss=44.7435, time: 48054.61
+Visualizing
+GPU memory usage:  5075
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7429
+[Epoch 1775] it=351000, loss=41.1127, time: 48858.56
+[Epoch 1780] it=352000, loss=54.3886, time: 49362.36
+[Epoch 1785] it=353000, loss=47.0809, time: 49859.21
+[Epoch 1790] it=354000, loss=42.0629, time: 50351.27
+[Epoch 1795] it=355000, loss=55.7545, time: 50846.41
+[Epoch 1800] it=356000, loss=48.3121, time: 51347.40
+[Epoch 1805] it=357000, loss=50.6448, time: 51846.09
+[Epoch 1810] it=358000, loss=53.1508, time: 52340.50
+[Epoch 1815] it=359000, loss=48.3464, time: 52832.76
+[Epoch 1821] it=360000, loss=48.3943, time: 53334.19
+Visualizing
+GPU memory usage:  5083
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7396
+[Epoch 1826] it=361000, loss=42.4697, time: 54137.61
+[Epoch 1831] it=362000, loss=41.6328, time: 54640.49
+[Epoch 1836] it=363000, loss=52.3701, time: 55144.26
+[Epoch 1841] it=364000, loss=40.8098, time: 55647.93
+[Epoch 1846] it=365000, loss=46.3078, time: 56145.30
+[Epoch 1851] it=366000, loss=41.5995, time: 56639.40
+[Epoch 1856] it=367000, loss=37.0223, time: 57135.48
+[Epoch 1861] it=368000, loss=41.4181, time: 57631.19
+[Epoch 1866] it=369000, loss=43.8796, time: 58133.72
+[Epoch 1871] it=370000, loss=38.3121, time: 58637.19
+Visualizing
+GPU memory usage:  5117
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7451
+[Epoch 1876] it=371000, loss=45.9254, time: 59440.70
+[Epoch 1881] it=372000, loss=50.7145, time: 59944.09
+[Epoch 1886] it=373000, loss=51.6197, time: 60447.64
+[Epoch 1891] it=374000, loss=44.6816, time: 60950.71
+[Epoch 1896] it=375000, loss=37.3250, time: 61454.04
+[Epoch 1901] it=376000, loss=44.6093, time: 61956.95
+[Epoch 1906] it=377000, loss=38.6368, time: 62457.67
+[Epoch 1911] it=378000, loss=39.9963, time: 62951.59
+[Epoch 1917] it=379000, loss=51.1912, time: 63445.13
+[Epoch 1922] it=380000, loss=42.1446, time: 63938.79
+Visualizing
+GPU memory usage:  5145
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7388
+[Epoch 1927] it=381000, loss=44.1727, time: 64721.12
+[Epoch 1932] it=382000, loss=48.3174, time: 65216.43
+[Epoch 1937] it=383000, loss=39.0264, time: 65709.14
+[Epoch 1942] it=384000, loss=50.5817, time: 66203.17
+[Epoch 1947] it=385000, loss=40.3315, time: 66697.54
+[Epoch 1952] it=386000, loss=46.9583, time: 67191.54
+[Epoch 1957] it=387000, loss=46.8355, time: 67687.45
+[Epoch 1962] it=388000, loss=52.2720, time: 68182.90
+[Epoch 1967] it=389000, loss=34.6750, time: 68676.73
+[Epoch 1972] it=390000, loss=43.3373, time: 69172.21
+Visualizing
+GPU memory usage:  5065
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7443
+[Epoch 1977] it=391000, loss=41.9211, time: 69953.31
+[Epoch 1982] it=392000, loss=38.7410, time: 70447.06
+[Epoch 1987] it=393000, loss=37.8938, time: 70938.69
+[Epoch 1992] it=394000, loss=48.8205, time: 71432.60
+[Epoch 1997] it=395000, loss=35.1612, time: 71928.73
+[Epoch 2002] it=396000, loss=37.7054, time: 72423.58
+[Epoch 2007] it=397000, loss=59.5259, time: 72918.37
+[Epoch 2012] it=398000, loss=46.7898, time: 73414.09
+[Epoch 2018] it=399000, loss=33.4630, time: 73909.40
+[Epoch 2023] it=400000, loss=37.9568, time: 74405.67
+Visualizing
+GPU memory usage:  5095
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7260
+[Epoch 2028] it=401000, loss=37.9880, time: 75188.57
+[Epoch 2033] it=402000, loss=56.2929, time: 75686.07
+[Epoch 2038] it=403000, loss=40.1454, time: 76182.14
+[Epoch 2043] it=404000, loss=36.6895, time: 76678.79
+[Epoch 2048] it=405000, loss=38.7908, time: 77176.41
+[Epoch 2053] it=406000, loss=37.5221, time: 77672.20
+[Epoch 2058] it=407000, loss=38.8420, time: 78170.47
+[Epoch 2063] it=408000, loss=48.2735, time: 78669.49
+[Epoch 2068] it=409000, loss=32.1369, time: 79168.45
+[Epoch 2073] it=410000, loss=33.5850, time: 79668.99
+Visualizing
+GPU memory usage:  5101
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7403
+[Epoch 2078] it=411000, loss=47.9596, time: 80466.81
+[Epoch 2083] it=412000, loss=42.3826, time: 80968.06
+[Epoch 2088] it=413000, loss=39.7086, time: 81466.64
+[Epoch 2093] it=414000, loss=52.6084, time: 81967.26
+[Epoch 2098] it=415000, loss=36.1635, time: 82466.98
+[Epoch 2103] it=416000, loss=32.8808, time: 82966.44
+[Epoch 2108] it=417000, loss=38.3489, time: 83465.61
+[Epoch 2113] it=418000, loss=44.7734, time: 83964.93
+[Epoch 2119] it=419000, loss=35.6666, time: 84468.32
+[Epoch 2124] it=420000, loss=40.9346, time: 84975.25
+Visualizing
+GPU memory usage:  5109
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7379
+[Epoch 2129] it=421000, loss=38.9377, time: 85786.84
+[Epoch 2134] it=422000, loss=41.5173, time: 86293.50
+User defined signal 2                                       

@@ -1,0 +1,57 @@
+method: dvr
+data:
+  dataset_name: DVRShapes
+  dataset: DVRShapes
+  path: /is/rg/avg/mniemeyer/project_data/2020/scalable_onet/data/ScanNet
+  n_training_points: 1024
+  input_type: null
+  train_split: single
+  val_split: single
+  test_split: single
+  #img_folder: image
+  #img_folder_input: image
+  #img_extension_input: png
+  #img_size_train: 256
+  n_views: 0
+  n_views_input: 0
+model:
+  encoder: null
+  c_dim: 0
+  z_dim: 0
+  texture_field: null
+  decoder_kwargs:
+    hidden_size: 128
+  lambda_depth: 1.
+  lambda_rgb: 0.
+  lambda_iou: 0.
+  depth_function_kwargs:
+    max_points: 2500000
+  lambda_normal: 0.05
+  depth_function_kwargs:
+    schedule_ray_sampling: false
+    check_cube_intersection: True
+    # d_range: [0., 8.]
+    #n_steps: [128, 129]
+    #n_steps: [64, 65]
+    n_steps: [1024, 1025]
+training:
+  out_dir:  out/scene134/dvr
+  n_workers: 0
+  n_workers_val: 0
+  model_selection_metric: loss_depth_eval
+  use_cube_intersection: False
+  print_every: 10
+  visualize_every: 2000
+  validate_every: 2000
+  checkpoint_every: 200
+generation:
+  with_colors: false
+  mesh_extension: 'off'
+  copy_vis_files: false
+  generate_pointcloud: false
+  #upsampling_steps: 3
+  #refinement_step: 30
+  #refine_max_faces: 12000
+  #simplify_nfaces: 64000
+test:
+  model_file: model.pt

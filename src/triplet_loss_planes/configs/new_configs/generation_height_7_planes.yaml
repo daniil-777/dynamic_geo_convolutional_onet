@@ -1,0 +1,5 @@
+inherit_from: configs/new_configs/height_planes.yaml
+test:
+  model_file: /cluster/scratch/demtsev/occupancy_networks/out/pointcloud/dpoc/height_7_planes_best.pt
+generation:
+  generation_dir: generation_height_7_planes

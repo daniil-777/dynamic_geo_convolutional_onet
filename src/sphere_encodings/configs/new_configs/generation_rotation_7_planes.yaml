@@ -1,0 +1,5 @@
+inherit_from: configs/new_configs/rotation_planes.yaml
+test:
+  model_file: /cluster/scratch/demtsev/occupancy_networks/out/pointcloud/dpoc/rotation_planes_best.pt
+generation:
+  generation_dir: generation_rotation_7_planes

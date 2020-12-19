@@ -1,0 +1,67 @@
+method: onet
+data:
+  input_type: pointcloud
+  classes: ['03001627']
+  input_type: pointcloud
+  path: data/ShapeNet
+  watertight_path: data/watertight
+  pointcloud_n: 3000
+  pointcloud_noise: 0.005
+  points_subsample: 2048
+  points_online_sample: False
+  points_file: points.npz
+  points_iou_file: points.npz
+  voxels_file: null
+  overfit: False
+  overfit_num: 0
+  padding: 0.1
+model:
+  encoder_latent: null
+  decoder: simple_local
+  # encoder: pointnet_resnet_local
+  encoder: pointnet_local_pool
+  encoder_kwargs:
+    scatter_type: max
+    hidden_dim: 128
+    plane_type: ['xz', 'xy', 'yz']
+    plane_resolution: 64
+    # grid_resolution: 32
+    # unet3d: True
+    # unet3d_kwargs:
+    #   num_levels: 3
+    #   f_maps: 32
+    #   in_channels: 32
+    #   out_channels: 32
+    unet: True
+    unet_kwargs:
+      depth: 4
+      merge_mode: concat
+      start_filts: 32
+  decoder_kwargs:
+    sample_mode: bilinear # bilinear / nearest
+  c_dim: 32
+  z_dim: 0
+training:
+  out_dir: out/pointcloud/chair_local_pool
+  batch_size: 24
+  model_selection_metric: iou
+  model_selection_mode: maximize
+  print_every: 100
+  visualize_every: 10000
+  validate_every: 10000
+  checkpoint_every: 2000
+  backup_every: 10000
+  n_workers: 12
+  n_workers_val: 12
+test:
+  threshold: 0.2
+  eval_mesh: true
+  eval_pointcloud: false
+  model_file: model_best.pt
+generation:
+  batch_size: 100000
+  vis_n_outputs: 2
+  # resolution_0: 64
+  refine: false
+  n_x: 128
+  n_z: 1

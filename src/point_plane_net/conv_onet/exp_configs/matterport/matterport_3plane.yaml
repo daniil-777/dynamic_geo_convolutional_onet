@@ -1,0 +1,61 @@
+method: onet
+data:
+  input_type: pointcloud
+  # classes: ['rooms_04', 'rooms_05', 'rooms_06', 'rooms_07', 'rooms_08']
+  # path: /is/rg/avg/mniemeyer/project_data/2020/scalable_onet/data/RoomDataset5
+  path: data/Matterport3D #/is/rg/avg/speng/project_data/2020/Matterport3D
+  classes: ['2t7WUuJeko7']
+  watertight_path: data/watertight
+  pointcloud_n: 10000
+  pointcloud_noise: 0.000
+  points_subsample: 2048
+  points_online_sample: False
+  points_file: points.npz
+  points_iou_file: points.npz
+  pointcloud_file: pointcloud.npz
+  pointcloud_chamfer_file: pointcloud.npz
+  voxels_file: null
+  overfit: False
+  overfit_num: 0
+  padding: 0.1
+  test_split: null
+model:
+  encoder_latent: null
+  decoder: simple_local
+  encoder: pointnet_local_pool
+  encoder_kwargs:
+    hidden_dim: 32
+    plane_type: ['xz', 'xy', 'yz']
+    plane_resolution: 128
+    unet: True
+    unet_kwargs:
+      depth: 5
+      merge_mode: concat
+      start_filts: 32
+  decoder_kwargs:
+    sample_mode: bilinear # bilinear / nearest
+    hidden_size: 32
+  c_dim: 32
+  z_dim: 0
+training:
+  out_dir: /is/rg/avg/mniemeyer/project_data/2020/scalable_onet/output/matterport_3plane2
+  batch_size: 32
+  model_selection_metric: iou
+  model_selection_mode: maximize
+  print_every: 1000
+  visualize_every: 10000
+  validate_every: 10000
+  checkpoint_every: 10000
+  backup_every: 10000
+test:
+  threshold: 0.2
+  eval_mesh: true
+  eval_pointcloud: false
+  model_file: model_best.pt
+generation:
+  batch_size: 100000
+  vis_n_outputs: 0
+  resolution_0: 64
+  refine: false
+  n_x: 128
+  n_z: 1

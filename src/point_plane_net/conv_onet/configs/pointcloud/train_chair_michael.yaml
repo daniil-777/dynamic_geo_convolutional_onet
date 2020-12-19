@@ -1,0 +1,50 @@
+method: onet
+data:
+  classes: ['03001627']
+  input_type: pointcloud
+  path: ShapeNetDataset
+  watertight_path: data/watertight
+  pointcloud_n: 3000
+  pointcloud_noise: 0.005
+  points_subsample: 2048 
+  points_online_sample: False
+  points_file: points.npz
+  points_iou_file: points.npz
+  overfit: False
+  overfit_num: 0
+  points_unpackbits: false
+model:
+  encoder_latent: null
+  decoder: simple_local
+  encoder: pointnet_resnet_local
+  encoder_kwargs:
+    hidden_dim: 128
+    plane_resolution: 64
+  decoder_kwargs:
+    bilinear: True
+  c_dim: 32
+  z_dim: 0
+  unet: True
+  unet_kwargs:
+    depth: 4
+    merge_mode: concat
+    start_filts: 32
+training:
+  out_dir:  out/test
+  batch_size: 12
+  model_selection_metric: iou
+  model_selection_mode: maximize
+  print_every: 20
+  visualize_every: 1000
+  validate_every: 10000
+  checkpoint_every: 1000
+  backup_every: 10000
+test:
+  threshold: 0.2
+  eval_mesh: true
+  eval_pointcloud: false
+generation:
+  batch_size: 100000
+  refine: false
+  n_x: 128
+  n_z: 1

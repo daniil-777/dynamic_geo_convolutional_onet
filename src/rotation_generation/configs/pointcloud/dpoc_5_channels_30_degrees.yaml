@@ -1,0 +1,10 @@
+inherit_from: configs/pointcloud/dpoc.yaml
+test:
+  model_file: /home/dsvilarkovic/partition600/occupancy_networks/out/pointcloud/dpoc/5planes_best.pt
+model : 
+  encoder_kwargs:
+    hidden_dim: 32
+    n_channels: 5
+generation:
+  generation_dir: generation_5plane_30_degrees
+degrees: 30

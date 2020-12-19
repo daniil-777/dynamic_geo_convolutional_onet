@@ -1,0 +1,66 @@
+method: onet
+data:
+  classes: ['rooms_05']
+  input_type: pointcloud
+  path: data/RoomDataset3
+  watertight_path: data/watertight
+  pointcloud_n: 3000
+  pointcloud_noise: 0.005
+  points_subsample: 2048
+  points_online_sample: False
+  points_file: points_iou
+  points_iou_file: points_iou
+  pointcloud_file: pointcloud
+  pointcloud_chamfer_file: pointcloud
+  multi_files: 10
+  voxels_file: null
+  overfit: False
+  overfit_num: 0
+  padding: 0.1
+  test_split: val
+model:
+  encoder_latent: null
+  decoder: simple_local
+  encoder: pointnet_resnet_local
+  encoder_kwargs:
+    hidden_dim: 128
+    plane_type: ['xz', 'xy', 'yz', 'grid']
+    plane_resolution: 128
+    grid_resolution: 32
+    unet3d: True
+    unet3d_kwargs:
+      num_levels: 3
+      f_maps: 32
+      in_channels: 32
+      out_channels: 32
+    unet: True
+    unet_kwargs:
+      depth: 5
+      merge_mode: concat
+      start_filts: 32
+  decoder_kwargs:
+    sample_mode: bilinear # bilinear / nearest
+  c_dim: 32
+  z_dim: 0
+training:
+  out_dir: out/pointcloud/room/combine
+  batch_size: 24
+  model_selection_metric: iou
+  model_selection_mode: maximize
+  print_every: 1000
+  visualize_every: 10000
+  validate_every: 10000
+  checkpoint_every: 10000
+  backup_every: 10000
+test:
+  threshold: 0.2
+  eval_mesh: true
+  eval_pointcloud: false
+  model_file: model_300000.pt
+generation:
+  batch_size: 100000
+  vis_n_outputs: 5
+  resolution_0: 64
+  refine: false
+  n_x: 128
+  n_z: 1

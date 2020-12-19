@@ -1,0 +1,15 @@
+import subprocess
+
+subprocess.call(["python", "generate_plane_vis.py", "configs/pointcloud/normals/01.yaml"])
+subprocess.call(["python", "generate_plane_vis.py", "configs/pointcloud/normals/02.yaml"])
+subprocess.call(["python", "generate_plane_vis.py", "configs/pointcloud/normals/03.yaml"])
+subprocess.call(["python", "generate_plane_vis.py", "configs/pointcloud/normals/04.yaml"])
+subprocess.call(["python", "generate_plane_vis.py", "configs/pointcloud/normals/05.yaml"])
+subprocess.call(["python", "generate_plane_vis.py", "configs/pointcloud/normals/06.yaml"])
+subprocess.call(["python", "generate_plane_vis.py", "configs/pointcloud/normals/07.yaml"])
+subprocess.call(["python", "generate_plane_vis.py", "configs/pointcloud/normals/08.yaml"])
+subprocess.call(["python", "generate_plane_vis.py", "configs/pointcloud/normals/09.yaml"])
+subprocess.call(["python", "generate_plane_vis.py", "configs/pointcloud/normals/10.yaml"])
+subprocess.call(["python", "generate_plane_vis.py", "configs/pointcloud/normals/11.yaml"])
+subprocess.call(["python", "generate_plane_vis.py", "configs/pointcloud/normals/12.yaml"])
+subprocess.call(["python", "generate_plane_vis.py", "configs/pointcloud/normals/13.yaml"])

@@ -1,0 +1,54 @@
+method: onet
+data:
+  classes: ['rooms_05']
+  input_type: voxels
+  voxels_file: 'model64.binvox'
+  path: /home/sonpeng/workspace/RoomDataset3
+  points_file: points_iou
+  points_iou_file: points_iou
+  pointcloud_file: pointcloud
+  pointcloud_chamfer_file: pointcloud
+  multi_files: 10
+  padding: 0.1
+  test_split: val
+  dim: 3
+  points_subsample: 1024
+model:
+  encoder_latent: null
+  decoder: simple_local
+  decoder_kwargs:
+    sample_mode: bilinear # bilinear / nearest
+  encoder: voxel_simple_local
+  encoder_kwargs:
+    plane_resolution: 128
+    plane_type: ['xz', 'xy', 'yz']
+    unet: True
+    unet_kwargs:
+      depth: 5
+      merge_mode: concat
+      start_filts: 32
+  c_dim: 32
+  z_dim: 0
+training:
+  out_dir:  out/voxels/room64_3plane128_bs32
+  batch_size: 32
+  model_selection_metric: iou
+  model_selection_mode: maximize
+  print_every: 100
+  visualize_every: 10000
+  validate_every: 10000
+  checkpoint_every: 10000
+  backup_every: 10000
+  n_workers: 12
+  n_workers_val: 12
+test:
+  threshold: 0.2
+  eval_mesh: true
+  eval_pointcloud: false
+  model_file: model_best.pt
+generation:
+  vis_n_outputs: 2
+  batch_size: 100000
+  refine: false
+  n_x: 128
+  n_z: 1

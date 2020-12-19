@@ -1,0 +1,712 @@
+Sender: LSF System <lsfadmin@lo-s4-026>
+Subject: Job 4159114: <python train_all.py configs/pointcloud/train_chair_grid.yaml> in cluster <leonhard> Exited
+
+Job <python train_all.py configs/pointcloud/train_chair_grid.yaml> was submitted from host <lo-login-01> by user <sonpeng> in cluster <leonhard> at Sat Feb 15 12:55:36 2020
+Job was executed on host(s) <12*lo-s4-026>, in queue <gpu.24h>, as user <sonpeng> in cluster <leonhard> at Sat Feb 15 12:56:00 2020
+</cluster/home/sonpeng> was used as the home directory.
+</cluster/home/sonpeng/scalable_implicit_reconstruction> was used as the working directory.
+Started at Sat Feb 15 12:56:00 2020
+Terminated at Sat Feb 15 12:56:18 2020
+Results reported at Sat Feb 15 12:56:18 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python train_all.py configs/pointcloud/train_chair_grid.yaml
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   4.23 sec.
+    Max Memory :                                 434 MB
+    Average Memory :                             176.00 MB
+    Total Requested Memory :                     12288.00 MB
+    Delta Memory :                               11854.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   29 sec.
+    Turnaround time :                            42 sec.
+
+The output (if any) follows:
+
+Error occured when loading field points of model b371bb691811acae68d92632b2a01360
+Traceback (most recent call last):
+  File "train_all.py", line 84, in <module>
+    data_vis = next(iterator)
+  File "/cluster/project/infk/cvg/songyou/miniconda3/envs/scalable/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 560, in __next__
+    batch = self.collate_fn([self.dataset[i] for i in indices])
+  File "/cluster/home/sonpeng/scalable_implicit_reconstruction/im2mesh/data/core.py", line 181, in collate_remove_none
+    return data.dataloader.default_collate(batch)
+  File "/cluster/project/infk/cvg/songyou/miniconda3/envs/scalable/lib/python3.6/site-packages/torch/utils/data/_utils/collate.py", line 34, in default_collate
+    elem_type = type(batch[0])
+IndexError: list index out of range
+Sender: LSF System <lsfadmin@lo-s4-048>
+Subject: Job 4159117: <python train_all.py configs/pointcloud/train_chair_grid.yaml> in cluster <leonhard> Exited
+
+Job <python train_all.py configs/pointcloud/train_chair_grid.yaml> was submitted from host <lo-login-01> by user <sonpeng> in cluster <leonhard> at Sat Feb 15 12:57:16 2020
+Job was executed on host(s) <12*lo-s4-048>, in queue <gpu.24h>, as user <sonpeng> in cluster <leonhard> at Sat Feb 15 12:57:30 2020
+</cluster/home/sonpeng> was used as the home directory.
+</cluster/home/sonpeng/scalable_implicit_reconstruction> was used as the working directory.
+Started at Sat Feb 15 12:57:30 2020
+Terminated at Sat Feb 15 12:58:42 2020
+Results reported at Sat Feb 15 12:58:42 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python train_all.py configs/pointcloud/train_chair_grid.yaml
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   62.67 sec.
+    Max Memory :                                 4737 MB
+    Average Memory :                             1953.20 MB
+    Total Requested Memory :                     12288.00 MB
+    Delta Memory :                               7551.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                7
+    Run time :                                   73 sec.
+    Turnaround time :                            86 sec.
+
+The output (if any) follows:
+
+Current best validation metric (iou): -inf
+Total number of parameters: 2078081
+output path:  out/chair_grid
+/opt/conda/conda-bld/pytorch_1556653099582/work/aten/src/THC/THCTensorScatterGather.cu:160: void THCudaTensor_scatterAddKernel(TensorInfo<Real, IndexType>, TensorInfo<Real, IndexType>, TensorInfo<long, IndexType>, int, IndexType) [with IndexType = unsigned int, Real = float, Dims = 3]: block: [2126,0,0], thread: [67,0,0] Assertion `indexValue >= 0 && indexValue < tensor.sizes[dim]` failed.
+Traceback (most recent call last):
+  File "train_all.py", line 159, in <module>
+    loss = trainer.train_step(batch)
+  File "/cluster/home/sonpeng/scalable_implicit_reconstruction/im2mesh/onet/training.py", line 51, in train_step
+    loss = self.compute_loss(data)
+  File "/cluster/home/sonpeng/scalable_implicit_reconstruction/im2mesh/onet/training.py", line 164, in compute_loss
+    c = self.model.encode_inputs(inputs)
+  File "/cluster/home/sonpeng/scalable_implicit_reconstruction/im2mesh/onet/models/__init__.py", line 98, in encode_inputs
+    c = self.encoder(inputs)
+  File "/cluster/project/infk/cvg/songyou/miniconda3/envs/scalable/lib/python3.6/site-packages/torch/nn/modules/module.py", line 493, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/cluster/home/sonpeng/scalable_implicit_reconstruction/im2mesh/encoder/pointnet.py", line 215, in forward
+    fea_grid['grid'] = self.generate_grid_features(p, c)
+  File "/cluster/home/sonpeng/scalable_implicit_reconstruction/im2mesh/encoder/pointnet.py", line 182, in generate_grid_features
+    fea_grid = scatter_mean(c, index, out=fea_grid) # B x C x reso^3
+  File "/cluster/project/infk/cvg/songyou/miniconda3/envs/scalable/lib/python3.6/site-packages/torch_scatter/mean.py", line 70, in scatter_mean
+    return out / count.clamp(min=1)
+RuntimeError: CUDA error: device-side assert triggered
+Sender: LSF System <lsfadmin@lo-s4-026>
+Subject: Job 4159172: <python train_all.py configs/pointcloud/train_chair_grid.yaml> in cluster <leonhard> Exited
+
+Job <python train_all.py configs/pointcloud/train_chair_grid.yaml> was submitted from host <lo-login-01> by user <sonpeng> in cluster <leonhard> at Sat Feb 15 13:16:03 2020
+Job was executed on host(s) <12*lo-s4-026>, in queue <gpu.24h>, as user <sonpeng> in cluster <leonhard> at Sat Feb 15 13:16:30 2020
+</cluster/home/sonpeng> was used as the home directory.
+</cluster/home/sonpeng/scalable_implicit_reconstruction> was used as the working directory.
+Started at Sat Feb 15 13:16:30 2020
+Terminated at Sun Feb 16 13:16:30 2020
+Results reported at Sun Feb 16 13:16:30 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python train_all.py configs/pointcloud/train_chair_grid.yaml
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 140.
+
+Resource usage summary:
+
+    CPU time :                                   218679.00 sec.
+    Max Memory :                                 12288 MB
+    Average Memory :                             12012.30 MB
+    Total Requested Memory :                     12288.00 MB
+    Delta Memory :                               0.00 MB
+    Max Swap :                                   -
+    Max Processes :                              23
+    Max Threads :                                90
+    Run time :                                   86423 sec.
+    Turnaround time :                            86427 sec.
+
+The output (if any) follows:
+
+Current best validation metric (iou): -inf
+Total number of parameters: 2078081
+output path:  out/chair_grid
+[Epoch 06] it=1000, loss=42.8207, time: 479.32
+[Epoch 11] it=2000, loss=38.5684, time: 899.33
+[Epoch 16] it=3000, loss=56.0683, time: 1319.37
+[Epoch 21] it=4000, loss=29.8361, time: 1738.93
+[Epoch 26] it=5000, loss=44.7258, time: 2159.05
+[Epoch 31] it=6000, loss=34.8663, time: 2579.25
+[Epoch 36] it=7000, loss=37.2793, time: 2999.61
+[Epoch 41] it=8000, loss=37.2526, time: 3420.21
+[Epoch 46] it=9000, loss=29.8669, time: 3840.42
+[Epoch 51] it=10000, loss=29.5471, time: 4260.71
+Visualizing
+GPU memory usage:  6295
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7896
+New best model (loss 0.7896)
+[Epoch 56] it=11000, loss=32.3054, time: 4730.01
+[Epoch 61] it=12000, loss=35.6029, time: 5150.39
+[Epoch 66] it=13000, loss=32.9593, time: 5571.08
+[Epoch 71] it=14000, loss=35.9453, time: 5991.41
+[Epoch 76] it=15000, loss=34.1635, time: 6411.87
+[Epoch 81] it=16000, loss=27.3748, time: 6832.76
+[Epoch 86] it=17000, loss=42.7297, time: 7253.72
+[Epoch 91] it=18000, loss=26.6790, time: 7674.19
+[Epoch 96] it=19000, loss=34.5762, time: 8094.48
+[Epoch 102] it=20000, loss=32.0249, time: 8516.23
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8035
+New best model (loss 0.8035)
+[Epoch 107] it=21000, loss=30.1781, time: 8991.62
+[Epoch 112] it=22000, loss=22.5962, time: 9412.09
+[Epoch 117] it=23000, loss=22.9039, time: 9832.57
+[Epoch 122] it=24000, loss=27.0984, time: 10253.01
+[Epoch 127] it=25000, loss=27.4998, time: 10673.54
+[Epoch 132] it=26000, loss=32.3150, time: 11093.80
+[Epoch 137] it=27000, loss=29.7337, time: 11514.33
+[Epoch 142] it=28000, loss=32.4860, time: 11935.42
+[Epoch 147] it=29000, loss=29.9432, time: 12355.97
+[Epoch 152] it=30000, loss=25.3643, time: 12776.68
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8276
+New best model (loss 0.8276)
+[Epoch 157] it=31000, loss=29.7106, time: 13249.52
+[Epoch 162] it=32000, loss=29.2437, time: 13671.22
+[Epoch 167] it=33000, loss=23.2136, time: 14093.56
+[Epoch 172] it=34000, loss=24.0311, time: 14514.77
+[Epoch 177] it=35000, loss=26.3762, time: 14936.22
+[Epoch 182] it=36000, loss=28.0191, time: 15357.61
+[Epoch 187] it=37000, loss=22.2200, time: 15779.18
+[Epoch 192] it=38000, loss=30.4105, time: 16201.00
+[Epoch 197] it=39000, loss=26.8925, time: 16622.62
+[Epoch 203] it=40000, loss=23.6035, time: 17044.92
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8216
+[Epoch 208] it=41000, loss=19.3744, time: 17516.56
+[Epoch 213] it=42000, loss=30.7055, time: 17938.78
+[Epoch 218] it=43000, loss=36.2639, time: 18360.54
+[Epoch 223] it=44000, loss=30.4681, time: 18781.53
+[Epoch 228] it=45000, loss=26.1423, time: 19203.32
+[Epoch 233] it=46000, loss=27.5035, time: 19625.18
+[Epoch 238] it=47000, loss=25.9282, time: 20046.09
+[Epoch 243] it=48000, loss=20.0485, time: 20467.40
+[Epoch 248] it=49000, loss=20.3503, time: 20889.32
+[Epoch 253] it=50000, loss=20.9567, time: 21311.42
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8261
+[Epoch 258] it=51000, loss=20.5945, time: 21788.53
+[Epoch 263] it=52000, loss=26.6486, time: 22210.37
+[Epoch 268] it=53000, loss=22.7576, time: 22632.33
+[Epoch 273] it=54000, loss=24.3976, time: 23054.40
+[Epoch 278] it=55000, loss=28.6075, time: 23476.58
+[Epoch 283] it=56000, loss=21.8590, time: 23898.36
+[Epoch 288] it=57000, loss=32.3037, time: 24320.15
+[Epoch 293] it=58000, loss=33.4479, time: 24743.01
+[Epoch 298] it=59000, loss=20.1828, time: 25165.27
+[Epoch 304] it=60000, loss=25.5669, time: 25588.59
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8302
+New best model (loss 0.8302)
+[Epoch 309] it=61000, loss=22.9868, time: 26059.23
+[Epoch 314] it=62000, loss=22.3655, time: 26480.81
+[Epoch 319] it=63000, loss=21.2640, time: 26902.31
+[Epoch 324] it=64000, loss=17.3578, time: 27324.16
+[Epoch 329] it=65000, loss=23.9928, time: 27746.02
+[Epoch 334] it=66000, loss=18.3810, time: 28167.37
+[Epoch 339] it=67000, loss=20.3315, time: 28588.70
+[Epoch 344] it=68000, loss=17.8921, time: 29009.98
+[Epoch 349] it=69000, loss=20.4631, time: 29431.57
+[Epoch 354] it=70000, loss=18.1171, time: 29853.34
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8335
+New best model (loss 0.8335)
+[Epoch 359] it=71000, loss=21.1075, time: 30329.04
+[Epoch 364] it=72000, loss=24.4635, time: 30750.73
+[Epoch 369] it=73000, loss=22.3078, time: 31172.12
+[Epoch 374] it=74000, loss=19.0500, time: 31593.75
+[Epoch 379] it=75000, loss=23.3299, time: 32015.04
+[Epoch 384] it=76000, loss=25.6453, time: 32436.89
+[Epoch 389] it=77000, loss=24.8943, time: 32858.55
+[Epoch 394] it=78000, loss=21.2624, time: 33279.81
+[Epoch 399] it=79000, loss=19.0203, time: 33702.14
+[Epoch 405] it=80000, loss=21.2568, time: 34124.58
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8336
+New best model (loss 0.8336)
+[Epoch 410] it=81000, loss=23.0183, time: 34596.99
+[Epoch 415] it=82000, loss=22.1301, time: 35018.30
+[Epoch 420] it=83000, loss=23.8999, time: 35439.36
+[Epoch 425] it=84000, loss=23.0216, time: 35861.77
+[Epoch 430] it=85000, loss=18.6693, time: 36284.15
+[Epoch 435] it=86000, loss=26.8174, time: 36705.22
+[Epoch 440] it=87000, loss=18.8650, time: 37126.27
+[Epoch 445] it=88000, loss=25.4055, time: 37547.24
+[Epoch 450] it=89000, loss=19.3411, time: 37968.34
+[Epoch 455] it=90000, loss=21.8547, time: 38389.66
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8351
+New best model (loss 0.8351)
+[Epoch 460] it=91000, loss=24.1864, time: 38860.05
+[Epoch 465] it=92000, loss=26.1033, time: 39280.87
+[Epoch 470] it=93000, loss=23.4638, time: 39701.69
+[Epoch 475] it=94000, loss=18.4850, time: 40122.54
+[Epoch 480] it=95000, loss=24.1890, time: 40544.98
+[Epoch 485] it=96000, loss=30.5348, time: 40966.05
+[Epoch 490] it=97000, loss=22.9320, time: 41386.86
+[Epoch 495] it=98000, loss=26.4253, time: 41808.03
+[Epoch 500] it=99000, loss=18.5671, time: 42229.02
+[Epoch 506] it=100000, loss=21.3903, time: 42650.73
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8310
+[Epoch 511] it=101000, loss=21.3525, time: 43120.67
+[Epoch 516] it=102000, loss=28.8817, time: 43541.13
+[Epoch 521] it=103000, loss=22.7339, time: 43961.79
+[Epoch 526] it=104000, loss=21.2360, time: 44382.87
+[Epoch 531] it=105000, loss=21.0146, time: 44804.13
+[Epoch 536] it=106000, loss=20.3423, time: 45224.39
+[Epoch 541] it=107000, loss=21.1854, time: 45645.34
+[Epoch 546] it=108000, loss=26.8039, time: 46066.15
+[Epoch 551] it=109000, loss=21.7869, time: 46487.10
+[Epoch 556] it=110000, loss=19.2089, time: 46907.48
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8329
+[Epoch 561] it=111000, loss=26.9227, time: 47377.17
+[Epoch 566] it=112000, loss=18.3989, time: 47797.98
+[Epoch 571] it=113000, loss=22.6689, time: 48219.21
+[Epoch 576] it=114000, loss=25.1665, time: 48639.67
+[Epoch 581] it=115000, loss=26.3703, time: 49060.28
+[Epoch 586] it=116000, loss=25.0337, time: 49480.47
+[Epoch 591] it=117000, loss=20.7382, time: 49901.54
+[Epoch 596] it=118000, loss=22.2417, time: 50322.26
+[Epoch 602] it=119000, loss=17.9773, time: 50744.11
+[Epoch 607] it=120000, loss=17.2858, time: 51165.13
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8329
+[Epoch 612] it=121000, loss=24.2468, time: 51635.15
+[Epoch 617] it=122000, loss=18.3815, time: 52056.59
+[Epoch 622] it=123000, loss=21.1763, time: 52477.76
+[Epoch 627] it=124000, loss=19.8715, time: 52899.11
+[Epoch 632] it=125000, loss=22.6465, time: 53320.03
+[Epoch 637] it=126000, loss=21.7928, time: 53741.00
+[Epoch 642] it=127000, loss=22.7033, time: 54162.76
+[Epoch 647] it=128000, loss=20.5622, time: 54584.69
+[Epoch 652] it=129000, loss=22.4112, time: 55005.93
+[Epoch 657] it=130000, loss=25.6673, time: 55427.32
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8337
+[Epoch 662] it=131000, loss=24.5548, time: 55897.96
+[Epoch 667] it=132000, loss=19.9237, time: 56319.89
+[Epoch 672] it=133000, loss=21.2237, time: 56740.97
+[Epoch 677] it=134000, loss=17.4487, time: 57162.65
+[Epoch 682] it=135000, loss=19.8713, time: 57583.75
+[Epoch 687] it=136000, loss=20.9158, time: 58005.69
+[Epoch 692] it=137000, loss=24.2911, time: 58427.30
+[Epoch 697] it=138000, loss=19.0117, time: 58847.71
+[Epoch 703] it=139000, loss=22.8489, time: 59270.08
+[Epoch 708] it=140000, loss=20.4884, time: 59691.79
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8297
+[Epoch 713] it=141000, loss=22.1637, time: 60163.78
+[Epoch 718] it=142000, loss=28.5348, time: 60585.21
+[Epoch 723] it=143000, loss=17.5359, time: 61006.25
+[Epoch 728] it=144000, loss=22.8455, time: 61427.94
+[Epoch 733] it=145000, loss=19.3208, time: 61849.52
+[Epoch 738] it=146000, loss=20.7884, time: 62270.43
+[Epoch 743] it=147000, loss=18.5455, time: 62692.28
+[Epoch 748] it=148000, loss=21.8196, time: 63113.08
+[Epoch 753] it=149000, loss=22.8777, time: 63534.90
+[Epoch 758] it=150000, loss=21.3481, time: 63956.20
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8323
+[Epoch 763] it=151000, loss=25.2572, time: 64431.53
+[Epoch 768] it=152000, loss=21.7951, time: 64852.58
+[Epoch 773] it=153000, loss=21.6485, time: 65273.88
+[Epoch 778] it=154000, loss=20.8048, time: 65695.26
+[Epoch 783] it=155000, loss=22.6616, time: 66116.63
+[Epoch 788] it=156000, loss=20.1745, time: 66537.99
+[Epoch 793] it=157000, loss=18.0864, time: 66959.91
+[Epoch 798] it=158000, loss=24.7256, time: 67381.36
+[Epoch 804] it=159000, loss=19.4020, time: 67803.58
+[Epoch 809] it=160000, loss=18.3643, time: 68224.94
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8343
+[Epoch 814] it=161000, loss=22.2942, time: 68695.79
+[Epoch 819] it=162000, loss=20.0188, time: 69117.79
+[Epoch 824] it=163000, loss=16.4685, time: 69539.62
+[Epoch 829] it=164000, loss=19.9895, time: 69960.97
+[Epoch 834] it=165000, loss=22.8320, time: 70383.38
+[Epoch 839] it=166000, loss=18.5148, time: 70804.62
+[Epoch 844] it=167000, loss=23.5086, time: 71226.41
+[Epoch 849] it=168000, loss=24.0353, time: 71648.11
+[Epoch 854] it=169000, loss=21.0678, time: 72069.10
+[Epoch 859] it=170000, loss=19.1296, time: 72490.23
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8302
+[Epoch 864] it=171000, loss=17.9428, time: 72967.13
+[Epoch 869] it=172000, loss=25.5501, time: 73388.35
+[Epoch 874] it=173000, loss=19.9178, time: 73809.45
+[Epoch 879] it=174000, loss=15.3696, time: 74231.00
+[Epoch 884] it=175000, loss=19.4227, time: 74652.76
+[Epoch 889] it=176000, loss=18.5071, time: 75074.57
+[Epoch 894] it=177000, loss=20.9773, time: 75495.59
+[Epoch 899] it=178000, loss=21.1322, time: 75917.19
+[Epoch 905] it=179000, loss=15.5987, time: 76339.55
+[Epoch 910] it=180000, loss=18.4267, time: 76761.01
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8343
+[Epoch 915] it=181000, loss=20.7488, time: 77232.73
+[Epoch 920] it=182000, loss=18.7007, time: 77654.05
+[Epoch 925] it=183000, loss=21.7031, time: 78076.12
+[Epoch 930] it=184000, loss=14.4987, time: 78497.54
+[Epoch 935] it=185000, loss=24.0213, time: 78919.02
+[Epoch 940] it=186000, loss=19.3396, time: 79340.26
+[Epoch 945] it=187000, loss=23.3151, time: 79762.80
+[Epoch 950] it=188000, loss=19.9540, time: 80185.00
+[Epoch 955] it=189000, loss=17.2697, time: 80607.15
+[Epoch 960] it=190000, loss=20.4963, time: 81029.08
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8313
+[Epoch 965] it=191000, loss=21.7824, time: 81503.72
+[Epoch 970] it=192000, loss=15.7248, time: 81925.20
+[Epoch 975] it=193000, loss=18.3261, time: 82346.05
+[Epoch 980] it=194000, loss=17.7506, time: 82768.17
+[Epoch 985] it=195000, loss=18.4973, time: 83190.08
+[Epoch 990] it=196000, loss=20.9080, time: 83612.01
+[Epoch 995] it=197000, loss=18.9269, time: 84033.51
+[Epoch 1000] it=198000, loss=20.8235, time: 84455.19
+[Epoch 1006] it=199000, loss=21.6881, time: 84877.84
+[Epoch 1011] it=200000, loss=22.7860, time: 85299.48
+Visualizing
+GPU memory usage:  6297
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8325
+[Epoch 1016] it=201000, loss=25.6222, time: 85769.91
+[Epoch 1021] it=202000, loss=19.9210, time: 86190.98
+User defined signal 2
+Sender: LSF System <lsfadmin@lo-s4-050>
+Subject: Job 4194008: <python train_all.py configs/pointcloud/train_chair_grid.yaml> in cluster <leonhard> Exited
+
+Job <python train_all.py configs/pointcloud/train_chair_grid.yaml> was submitted from host <lo-login-01> by user <sonpeng> in cluster <leonhard> at Sun Feb 16 18:02:59 2020
+Job was executed on host(s) <12*lo-s4-050>, in queue <gpu.24h>, as user <sonpeng> in cluster <leonhard> at Sun Feb 16 18:03:24 2020
+</cluster/home/sonpeng> was used as the home directory.
+</cluster/home/sonpeng/scalable_implicit_reconstruction> was used as the working directory.
+Started at Sun Feb 16 18:03:24 2020
+Terminated at Mon Feb 17 18:03:28 2020
+Results reported at Mon Feb 17 18:03:28 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python train_all.py configs/pointcloud/train_chair_grid.yaml
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 140.
+
+Resource usage summary:
+
+    CPU time :                                   180463.00 sec.
+    Max Memory :                                 12288 MB
+    Average Memory :                             12039.78 MB
+    Total Requested Memory :                     12288.00 MB
+    Delta Memory :                               0.00 MB
+    Max Swap :                                   -
+    Max Processes :                              23
+    Max Threads :                                90
+    Run time :                                   86428 sec.
+    Turnaround time :                            86429 sec.
+
+The output (if any) follows:
+
+out/chair_grid/model.pt
+=> Loading checkpoint from local file...
+Current best validation metric (iou): 0.83511746
+Total number of parameters: 2078081
+output path:  out/chair_grid
+[Epoch 1017] it=201000, loss=17.7964, time: 653.10
+[Epoch 1022] it=202000, loss=13.9548, time: 1243.49
+[Epoch 1027] it=203000, loss=20.0770, time: 1834.15
+[Epoch 1032] it=204000, loss=16.2738, time: 2424.99
+[Epoch 1037] it=205000, loss=15.6569, time: 3016.61
+[Epoch 1042] it=206000, loss=18.9689, time: 3608.29
+[Epoch 1047] it=207000, loss=20.4064, time: 4199.79
+[Epoch 1052] it=208000, loss=23.9655, time: 4790.97
+[Epoch 1057] it=209000, loss=18.4096, time: 5382.03
+[Epoch 1062] it=210000, loss=26.1836, time: 5973.26
+Visualizing
+GPU memory usage:  6283
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8355
+New best model (loss 0.8355)
+[Epoch 1067] it=211000, loss=20.9995, time: 6622.43
+[Epoch 1072] it=212000, loss=19.3387, time: 7213.83
+[Epoch 1077] it=213000, loss=23.5679, time: 7805.23
+[Epoch 1082] it=214000, loss=17.1034, time: 8396.39
+[Epoch 1087] it=215000, loss=18.0236, time: 8987.84
+[Epoch 1092] it=216000, loss=20.9940, time: 9579.46
+[Epoch 1097] it=217000, loss=19.9002, time: 10171.03
+[Epoch 1102] it=218000, loss=25.9961, time: 10762.58
+[Epoch 1107] it=219000, loss=18.1429, time: 11353.85
+[Epoch 1113] it=220000, loss=21.2725, time: 11946.33
+Visualizing
+GPU memory usage:  6283
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8317
+[Epoch 1118] it=221000, loss=14.1381, time: 12596.82
+[Epoch 1123] it=222000, loss=14.0146, time: 13188.46
+[Epoch 1128] it=223000, loss=21.6108, time: 13780.03
+[Epoch 1133] it=224000, loss=23.2562, time: 14371.46
+[Epoch 1138] it=225000, loss=17.4652, time: 14963.08
+[Epoch 1143] it=226000, loss=19.2541, time: 15554.64
+[Epoch 1148] it=227000, loss=20.1179, time: 16146.25
+[Epoch 1153] it=228000, loss=22.7455, time: 16737.94
+[Epoch 1158] it=229000, loss=18.3731, time: 17329.67
+[Epoch 1163] it=230000, loss=16.7457, time: 17921.30
+Visualizing
+GPU memory usage:  6283
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8358
+New best model (loss 0.8358)
+[Epoch 1168] it=231000, loss=22.0791, time: 18571.12
+[Epoch 1173] it=232000, loss=19.0855, time: 19162.77
+[Epoch 1178] it=233000, loss=16.7384, time: 19754.77
+[Epoch 1183] it=234000, loss=21.5124, time: 20346.33
+[Epoch 1188] it=235000, loss=18.7223, time: 20938.18
+[Epoch 1193] it=236000, loss=20.4357, time: 21529.70
+[Epoch 1198] it=237000, loss=15.0839, time: 22121.34
+[Epoch 1203] it=238000, loss=17.0673, time: 22712.97
+[Epoch 1208] it=239000, loss=16.2172, time: 23304.61
+[Epoch 1214] it=240000, loss=20.2123, time: 23897.26
+Visualizing
+GPU memory usage:  6283
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8383
+New best model (loss 0.8383)
+[Epoch 1219] it=241000, loss=20.2843, time: 24547.09
+[Epoch 1224] it=242000, loss=21.0548, time: 25138.78
+[Epoch 1229] it=243000, loss=12.3948, time: 25730.59
+[Epoch 1234] it=244000, loss=19.4328, time: 26322.12
+[Epoch 1239] it=245000, loss=17.4659, time: 26913.83
+[Epoch 1244] it=246000, loss=18.7225, time: 27505.57
+[Epoch 1249] it=247000, loss=19.9200, time: 28097.26
+[Epoch 1254] it=248000, loss=19.7978, time: 28688.85
+[Epoch 1259] it=249000, loss=15.2455, time: 29280.40
+[Epoch 1264] it=250000, loss=20.1312, time: 29872.19
+Visualizing
+GPU memory usage:  6283
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8337
+[Epoch 1269] it=251000, loss=19.5147, time: 30522.35
+[Epoch 1274] it=252000, loss=19.0379, time: 31114.07
+[Epoch 1279] it=253000, loss=21.2613, time: 31705.60
+[Epoch 1284] it=254000, loss=22.4607, time: 32297.05
+[Epoch 1289] it=255000, loss=19.0290, time: 32888.77
+[Epoch 1294] it=256000, loss=17.7684, time: 33480.51
+[Epoch 1299] it=257000, loss=20.5138, time: 34072.22
+[Epoch 1304] it=258000, loss=22.9109, time: 34663.74
+[Epoch 1309] it=259000, loss=19.0254, time: 35255.55
+[Epoch 1315] it=260000, loss=23.5033, time: 35848.05
+Visualizing
+GPU memory usage:  6283
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8297
+[Epoch 1320] it=261000, loss=16.5911, time: 36497.71
+[Epoch 1325] it=262000, loss=16.3828, time: 37089.24
+[Epoch 1330] it=263000, loss=18.2305, time: 37680.73
+[Epoch 1335] it=264000, loss=17.2327, time: 38272.11
+[Epoch 1340] it=265000, loss=20.8667, time: 38863.88
+[Epoch 1345] it=266000, loss=18.8573, time: 39455.62
+[Epoch 1350] it=267000, loss=20.2564, time: 40047.69
+[Epoch 1355] it=268000, loss=20.7489, time: 40639.31
+[Epoch 1360] it=269000, loss=16.9719, time: 41230.90
+[Epoch 1365] it=270000, loss=17.2681, time: 41822.86
+Visualizing
+GPU memory usage:  6283
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8348
+[Epoch 1370] it=271000, loss=20.9824, time: 42473.12
+[Epoch 1375] it=272000, loss=19.7759, time: 43064.56
+[Epoch 1380] it=273000, loss=13.8241, time: 43656.20
+[Epoch 1385] it=274000, loss=25.9881, time: 44247.90
+[Epoch 1390] it=275000, loss=17.5435, time: 44839.78
+[Epoch 1395] it=276000, loss=21.6185, time: 45431.82
+[Epoch 1400] it=277000, loss=14.9880, time: 46023.37
+[Epoch 1405] it=278000, loss=17.5344, time: 46614.94
+[Epoch 1410] it=279000, loss=17.7979, time: 47206.97
+[Epoch 1416] it=280000, loss=17.4856, time: 47799.46
+Visualizing
+GPU memory usage:  6283
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8350
+[Epoch 1421] it=281000, loss=17.5165, time: 48449.05
+[Epoch 1426] it=282000, loss=15.7091, time: 49040.95
+[Epoch 1431] it=283000, loss=14.8726, time: 49632.55
+[Epoch 1436] it=284000, loss=17.5696, time: 50224.17
+[Epoch 1441] it=285000, loss=20.2017, time: 50815.82
+[Epoch 1446] it=286000, loss=15.7147, time: 51407.73
+[Epoch 1451] it=287000, loss=17.9419, time: 51999.13
+[Epoch 1456] it=288000, loss=16.8123, time: 52590.94
+[Epoch 1461] it=289000, loss=16.0701, time: 53182.73
+[Epoch 1466] it=290000, loss=17.7500, time: 53774.25
+Visualizing
+GPU memory usage:  6283
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8337
+[Epoch 1471] it=291000, loss=18.7503, time: 54424.64
+[Epoch 1476] it=292000, loss=17.6720, time: 55016.15
+[Epoch 1481] it=293000, loss=14.1960, time: 55607.91
+[Epoch 1486] it=294000, loss=16.1886, time: 56199.43
+[Epoch 1491] it=295000, loss=17.2550, time: 56790.89
+[Epoch 1496] it=296000, loss=15.5943, time: 57382.51
+[Epoch 1501] it=297000, loss=17.7193, time: 57974.17
+[Epoch 1506] it=298000, loss=19.7084, time: 58565.59
+[Epoch 1511] it=299000, loss=18.8138, time: 59157.04
+[Epoch 1517] it=300000, loss=18.9885, time: 59749.69
+Visualizing
+GPU memory usage:  6283
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8359
+[Epoch 1522] it=301000, loss=16.7240, time: 60399.17
+[Epoch 1527] it=302000, loss=15.2352, time: 60990.98
+[Epoch 1532] it=303000, loss=16.1451, time: 61582.55
+[Epoch 1537] it=304000, loss=21.7042, time: 62174.12
+[Epoch 1542] it=305000, loss=21.0081, time: 62765.65
+[Epoch 1547] it=306000, loss=18.4427, time: 63357.25
+[Epoch 1552] it=307000, loss=20.6182, time: 63948.62
+[Epoch 1557] it=308000, loss=16.2115, time: 64540.02
+[Epoch 1562] it=309000, loss=19.1205, time: 65131.45
+[Epoch 1567] it=310000, loss=19.4522, time: 65722.92
+Visualizing
+GPU memory usage:  6283
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8322
+[Epoch 1572] it=311000, loss=15.3401, time: 66373.29
+[Epoch 1577] it=312000, loss=14.6214, time: 66964.74
+[Epoch 1582] it=313000, loss=15.6850, time: 67556.07
+[Epoch 1587] it=314000, loss=18.0795, time: 68147.54
+[Epoch 1592] it=315000, loss=17.1506, time: 68739.48
+[Epoch 1597] it=316000, loss=18.6388, time: 69331.11
+[Epoch 1602] it=317000, loss=17.9398, time: 69922.54
+[Epoch 1607] it=318000, loss=21.8251, time: 70514.05
+[Epoch 1613] it=319000, loss=18.1356, time: 71106.56
+[Epoch 1618] it=320000, loss=20.3733, time: 71698.16
+Visualizing
+GPU memory usage:  6283
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8326
+[Epoch 1623] it=321000, loss=16.3653, time: 72348.66
+[Epoch 1628] it=322000, loss=17.5999, time: 72940.36
+[Epoch 1633] it=323000, loss=22.2105, time: 73531.86
+[Epoch 1638] it=324000, loss=27.8738, time: 74123.35
+[Epoch 1643] it=325000, loss=15.8655, time: 74714.77
+[Epoch 1648] it=326000, loss=19.6996, time: 75306.11
+[Epoch 1653] it=327000, loss=17.3555, time: 75897.57
+[Epoch 1658] it=328000, loss=16.4264, time: 76489.12
+[Epoch 1663] it=329000, loss=20.0899, time: 77080.94
+[Epoch 1668] it=330000, loss=20.9106, time: 77672.79
+Visualizing
+GPU memory usage:  6283
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8371
+[Epoch 1673] it=331000, loss=17.7806, time: 78322.57
+[Epoch 1678] it=332000, loss=15.5625, time: 78914.15
+[Epoch 1683] it=333000, loss=18.2336, time: 79505.94
+[Epoch 1688] it=334000, loss=15.1771, time: 80097.54
+[Epoch 1693] it=335000, loss=15.5188, time: 80689.01
+[Epoch 1698] it=336000, loss=18.1064, time: 81280.59
+[Epoch 1703] it=337000, loss=19.3117, time: 81872.24
+[Epoch 1708] it=338000, loss=15.7557, time: 82463.70
+[Epoch 1714] it=339000, loss=20.6673, time: 83056.42
+[Epoch 1719] it=340000, loss=17.5505, time: 83647.96
+Visualizing
+GPU memory usage:  6283
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.8422
+New best model (loss 0.8422)
+[Epoch 1724] it=341000, loss=20.4658, time: 84297.51
+[Epoch 1729] it=342000, loss=19.9331, time: 84889.42
+[Epoch 1734] it=343000, loss=17.9847, time: 85481.22
+[Epoch 1739] it=344000, loss=16.8969, time: 86072.84
+User defined signal 2

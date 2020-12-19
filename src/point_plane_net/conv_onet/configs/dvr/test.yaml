@@ -1,0 +1,52 @@
+method: dvr
+data:
+  dataset_name: DVRShapes
+  dataset: DVRShapes
+  # initalized from depth_02; purpose is to see if maybe lambda normal was too high, here we only use 0.05
+  #path: /raid/data/mniemeyer/datasets/ShapeNet4
+  path: /is/rg/avg/mniemeyer/project_data/2020/scalable_onet/data/Rooms_depth
+  n_training_points: 1024
+  input_type: null
+  img_folder: image
+  img_folder_input: image
+  img_extension_input: png
+  img_size_train: 256
+model:
+  encoder: null
+  c_dim: 0
+  z_dim: 0
+  texture_field: null
+  decoder_kwargs:
+    hidden_size: 128
+  lambda_depth: 1.
+  lambda_rgb: 0.
+  depth_function_kwargs:
+    max_points: 2500000
+  lambda_normal: 0.05
+  deph_function_kwargs:
+    schedule_ray_sampling: false
+    #n_steps: [256, 257]
+    #n_steps: [64, 65]
+training:
+  out_dir:  out/test_room_pointnet
+  scheduler_milestones: [120000]
+  scheduler_gamma: 0.5
+  n_workers: 0
+  n_workers_val: 0
+  model_selection_metric: loss_depth_eval
+  use_cube_intersection: True
+  print_every: 10
+  visualize_every: 1000
+  validate_every: 2000
+  checkpoint_every: 200
+generation:
+  with_colors: false
+  mesh_extension: 'off'
+  copy_vis_files: false
+  generate_pointcloud: false
+  #upsampling_steps: 3
+  #refinement_step: 30
+  #refine_max_faces: 12000
+  #simplify_nfaces: 64000
+test:
+  model_file: model.pt

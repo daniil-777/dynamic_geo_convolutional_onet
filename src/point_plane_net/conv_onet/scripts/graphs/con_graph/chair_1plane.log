@@ -1,0 +1,777 @@
+Sender: LSF System <lsfadmin@lo-s4-039>
+Subject: Job 3772934: <python train_all.py configs/pointcloud/train_chair.yaml> in cluster <leonhard> Exited
+
+Job <python train_all.py configs/pointcloud/train_chair.yaml> was submitted from host <lo-login-01> by user <sonpeng> in cluster <leonhard> at Fri Jan 10 16:25:36 2020
+Job was executed on host(s) <20*lo-s4-039>, in queue <gpu.24h>, as user <sonpeng> in cluster <leonhard> at Fri Jan 10 16:26:00 2020
+</cluster/home/sonpeng> was used as the home directory.
+</cluster/home/sonpeng/scalable_implicit_reconstruction> was used as the working directory.
+Started at Fri Jan 10 16:26:00 2020
+Terminated at Sat Jan 11 16:25:50 2020
+Results reported at Sat Jan 11 16:25:50 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python train_all.py configs/pointcloud/train_chair.yaml
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 140.
+
+Resource usage summary:
+
+    CPU time :                                   299706.00 sec.
+    Max Memory :                                 14736 MB
+    Average Memory :                             13684.40 MB
+    Total Requested Memory :                     20480.00 MB
+    Delta Memory :                               5744.00 MB
+    Max Swap :                                   -
+    Max Processes :                              57
+    Max Threads :                                226
+    Run time :                                   86415 sec.
+    Turnaround time :                            86414 sec.
+
+The output (if any) follows:
+
+Current best validation metric (iou): -inf
+Total number of parameters: 3131361
+[Epoch 10] it=2000, loss=100.0233
+[Epoch 20] it=4000, loss=101.6299
+Visualizing
+[Epoch 30] it=6000, loss=105.7688
+[Epoch 40] it=8000, loss=77.9408
+[Epoch 50] it=10000, loss=88.9760
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.6506
+New best model (loss 0.6506)
+[Epoch 60] it=12000, loss=85.6614
+[Epoch 70] it=14000, loss=68.8293
+Visualizing
+[Epoch 80] it=16000, loss=68.6679
+[Epoch 90] it=18000, loss=64.2043
+[Epoch 101] it=20000, loss=49.3439
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.6829
+New best model (loss 0.6829)
+[Epoch 111] it=22000, loss=64.1992
+[Epoch 121] it=24000, loss=79.7562
+Visualizing
+[Epoch 131] it=26000, loss=43.9650
+[Epoch 141] it=28000, loss=45.7652
+[Epoch 151] it=30000, loss=58.2097
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7059
+New best model (loss 0.7059)
+[Epoch 161] it=32000, loss=58.6633
+[Epoch 171] it=34000, loss=63.5471
+Visualizing
+[Epoch 181] it=36000, loss=46.8809
+[Epoch 191] it=38000, loss=42.1802
+[Epoch 202] it=40000, loss=46.1034
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7231
+New best model (loss 0.7231)
+[Epoch 212] it=42000, loss=45.0441
+[Epoch 222] it=44000, loss=48.9520
+Visualizing
+[Epoch 232] it=46000, loss=53.6986
+[Epoch 242] it=48000, loss=50.5958
+[Epoch 252] it=50000, loss=57.5469
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7303
+New best model (loss 0.7303)
+[Epoch 262] it=52000, loss=45.1824
+[Epoch 272] it=54000, loss=43.8272
+Visualizing
+[Epoch 282] it=56000, loss=52.0542
+[Epoch 292] it=58000, loss=37.5541
+[Epoch 303] it=60000, loss=40.8846
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7220
+[Epoch 313] it=62000, loss=44.5933
+[Epoch 323] it=64000, loss=46.3757
+Visualizing
+[Epoch 333] it=66000, loss=51.4703
+[Epoch 343] it=68000, loss=48.9111
+[Epoch 353] it=70000, loss=38.7094
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7262
+[Epoch 363] it=72000, loss=46.8810
+[Epoch 373] it=74000, loss=34.1596
+Visualizing
+[Epoch 383] it=76000, loss=43.3341
+[Epoch 393] it=78000, loss=41.0418
+[Epoch 404] it=80000, loss=39.6550
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7223
+[Epoch 414] it=82000, loss=42.5508
+[Epoch 424] it=84000, loss=37.5851
+Visualizing
+[Epoch 434] it=86000, loss=43.5696
+[Epoch 444] it=88000, loss=39.1758
+[Epoch 454] it=90000, loss=49.5745
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7526
+New best model (loss 0.7526)
+[Epoch 464] it=92000, loss=34.1039
+[Epoch 474] it=94000, loss=37.9205
+Visualizing
+[Epoch 484] it=96000, loss=35.1043
+[Epoch 494] it=98000, loss=33.8278
+[Epoch 505] it=100000, loss=35.5878
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7542
+New best model (loss 0.7542)
+[Epoch 515] it=102000, loss=42.4044
+[Epoch 525] it=104000, loss=46.8082
+Visualizing
+[Epoch 535] it=106000, loss=31.3456
+[Epoch 545] it=108000, loss=37.8592
+[Epoch 555] it=110000, loss=42.3730
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7514
+[Epoch 565] it=112000, loss=38.7513
+[Epoch 575] it=114000, loss=39.2824
+Visualizing
+[Epoch 585] it=116000, loss=28.3200
+[Epoch 595] it=118000, loss=38.9649
+[Epoch 606] it=120000, loss=33.4476
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7547
+New best model (loss 0.7547)
+[Epoch 616] it=122000, loss=37.9927
+[Epoch 626] it=124000, loss=46.4651
+Visualizing
+[Epoch 636] it=126000, loss=30.5197
+[Epoch 646] it=128000, loss=38.7428
+[Epoch 656] it=130000, loss=36.5491
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7583
+New best model (loss 0.7583)
+[Epoch 666] it=132000, loss=33.8576
+[Epoch 676] it=134000, loss=29.6814
+Visualizing
+[Epoch 686] it=136000, loss=35.5524
+[Epoch 696] it=138000, loss=49.6657
+[Epoch 707] it=140000, loss=41.2573
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7524
+[Epoch 717] it=142000, loss=29.5329
+[Epoch 727] it=144000, loss=27.5866
+Visualizing
+[Epoch 737] it=146000, loss=34.1835
+[Epoch 747] it=148000, loss=33.8971
+[Epoch 757] it=150000, loss=36.8556
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7370
+[Epoch 767] it=152000, loss=29.1899
+[Epoch 777] it=154000, loss=42.3214
+Visualizing
+[Epoch 787] it=156000, loss=38.1511
+[Epoch 797] it=158000, loss=30.2258
+[Epoch 808] it=160000, loss=33.9050
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7585
+New best model (loss 0.7585)
+[Epoch 818] it=162000, loss=30.9366
+[Epoch 828] it=164000, loss=29.5688
+Visualizing
+[Epoch 838] it=166000, loss=28.8435
+[Epoch 848] it=168000, loss=30.2406
+[Epoch 858] it=170000, loss=29.4304
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7525
+[Epoch 868] it=172000, loss=37.0247
+[Epoch 878] it=174000, loss=28.0438
+Visualizing
+[Epoch 888] it=176000, loss=37.2541
+[Epoch 898] it=178000, loss=25.7270
+[Epoch 909] it=180000, loss=33.6267
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7554
+[Epoch 919] it=182000, loss=32.8470
+[Epoch 929] it=184000, loss=23.6342
+Visualizing
+[Epoch 939] it=186000, loss=32.3011
+[Epoch 949] it=188000, loss=39.3813
+[Epoch 959] it=190000, loss=26.9698
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7520
+[Epoch 969] it=192000, loss=28.8933
+[Epoch 979] it=194000, loss=21.3340
+Visualizing
+[Epoch 989] it=196000, loss=33.9358
+[Epoch 999] it=198000, loss=26.1189
+[Epoch 1010] it=200000, loss=40.7738
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7512
+[Epoch 1020] it=202000, loss=32.8263
+[Epoch 1030] it=204000, loss=28.5597
+Visualizing
+[Epoch 1040] it=206000, loss=37.5788
+[Epoch 1050] it=208000, loss=32.1400
+[Epoch 1060] it=210000, loss=33.4792
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7643
+New best model (loss 0.7643)
+[Epoch 1070] it=212000, loss=23.7348
+[Epoch 1080] it=214000, loss=28.8330
+Visualizing
+[Epoch 1090] it=216000, loss=30.9167
+[Epoch 1101] it=218000, loss=31.1576
+[Epoch 1111] it=220000, loss=25.7628
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7525
+[Epoch 1121] it=222000, loss=27.6264
+[Epoch 1131] it=224000, loss=24.1713
+Visualizing
+[Epoch 1141] it=226000, loss=31.7024
+[Epoch 1151] it=228000, loss=37.9650
+[Epoch 1161] it=230000, loss=29.5218
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7537
+[Epoch 1171] it=232000, loss=32.1086
+[Epoch 1181] it=234000, loss=20.9939
+Visualizing
+[Epoch 1191] it=236000, loss=31.4029
+[Epoch 1202] it=238000, loss=27.6029
+[Epoch 1212] it=240000, loss=25.5434
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7557
+[Epoch 1222] it=242000, loss=41.2637
+[Epoch 1232] it=244000, loss=29.9467
+Visualizing
+[Epoch 1242] it=246000, loss=26.2134
+[Epoch 1252] it=248000, loss=29.3127
+[Epoch 1262] it=250000, loss=28.3201
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7675
+New best model (loss 0.7675)
+[Epoch 1272] it=252000, loss=26.5427
+[Epoch 1282] it=254000, loss=32.7597
+Visualizing
+[Epoch 1292] it=256000, loss=28.1354
+[Epoch 1303] it=258000, loss=24.9585
+[Epoch 1313] it=260000, loss=33.9923
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7542
+[Epoch 1323] it=262000, loss=23.2448
+[Epoch 1333] it=264000, loss=25.7144
+Visualizing
+[Epoch 1343] it=266000, loss=19.2156
+[Epoch 1353] it=268000, loss=24.4315
+[Epoch 1363] it=270000, loss=28.3582
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7630
+[Epoch 1373] it=272000, loss=27.6606
+[Epoch 1383] it=274000, loss=28.3174
+Visualizing
+[Epoch 1393] it=276000, loss=28.3546
+[Epoch 1404] it=278000, loss=31.7694
+[Epoch 1414] it=280000, loss=31.3981
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7694
+New best model (loss 0.7694)
+[Epoch 1424] it=282000, loss=29.2598
+[Epoch 1434] it=284000, loss=23.9366
+Visualizing
+[Epoch 1444] it=286000, loss=23.2339
+[Epoch 1454] it=288000, loss=21.9571
+[Epoch 1464] it=290000, loss=27.7578
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7625
+[Epoch 1474] it=292000, loss=31.1465
+[Epoch 1484] it=294000, loss=29.7734
+Visualizing
+[Epoch 1494] it=296000, loss=23.5870
+[Epoch 1505] it=298000, loss=22.6391
+[Epoch 1515] it=300000, loss=25.0296
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7650
+[Epoch 1525] it=302000, loss=33.8366
+[Epoch 1535] it=304000, loss=24.8890
+Visualizing
+[Epoch 1545] it=306000, loss=25.5938
+[Epoch 1555] it=308000, loss=22.0746
+[Epoch 1565] it=310000, loss=26.5530
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7583
+[Epoch 1575] it=312000, loss=26.3669
+[Epoch 1585] it=314000, loss=24.5185
+Visualizing
+[Epoch 1595] it=316000, loss=23.8832
+[Epoch 1606] it=318000, loss=35.9485
+[Epoch 1616] it=320000, loss=26.4612
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7627
+[Epoch 1626] it=322000, loss=26.3220
+[Epoch 1636] it=324000, loss=29.4720
+User defined signal 2
+Total number of parameters: 3131361
+[Epoch 1627] it=322000, loss=27.3153
+[Epoch 1637] it=324000, loss=27.8318
+Visualizing
+[Epoch 1647] it=326000, loss=25.1140
+[Epoch 1657] it=328000, loss=31.5408
+[Epoch 1667] it=330000, loss=24.6548
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7657
+[Epoch 1677] it=332000, loss=26.7151
+[Epoch 1687] it=334000, loss=25.7203
+Visualizing
+[Epoch 1697] it=336000, loss=29.2639
+[Epoch 1707] it=338000, loss=24.0505
+[Epoch 1718] it=340000, loss=27.4566
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7603
+[Epoch 1728] it=342000, loss=24.1664
+[Epoch 1738] it=344000, loss=23.8623
+Visualizing
+[Epoch 1748] it=346000, loss=23.4311
+[Epoch 1758] it=348000, loss=33.0516
+[Epoch 1768] it=350000, loss=29.7437
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7696
+New best model (loss 0.7696)
+[Epoch 1778] it=352000, loss=24.2399
+[Epoch 1788] it=354000, loss=22.3193
+Visualizing
+[Epoch 1798] it=356000, loss=20.9575
+[Epoch 1808] it=358000, loss=22.3224
+[Epoch 1819] it=360000, loss=27.8067
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7647
+[Epoch 1829] it=362000, loss=26.4547
+[Epoch 1839] it=364000, loss=18.3158
+Visualizing
+[Epoch 1849] it=366000, loss=25.7505
+[Epoch 1859] it=368000, loss=22.8695
+[Epoch 1869] it=370000, loss=28.9682
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7704
+New best model (loss 0.7704)
+[Epoch 1879] it=372000, loss=31.4637
+[Epoch 1889] it=374000, loss=26.6969
+Visualizing
+[Epoch 1899] it=376000, loss=24.7696
+[Epoch 1909] it=378000, loss=23.4633
+[Epoch 1920] it=380000, loss=31.8057
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7644
+[Epoch 1930] it=382000, loss=30.7848
+[Epoch 1940] it=384000, loss=25.1031
+Visualizing
+[Epoch 1950] it=386000, loss=26.0873
+[Epoch 1960] it=388000, loss=19.2405
+[Epoch 1970] it=390000, loss=26.7721
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7655
+[Epoch 1980] it=392000, loss=22.1138
+[Epoch 1990] it=394000, loss=27.4972
+Visualizing
+[Epoch 2000] it=396000, loss=25.0204
+[Epoch 2010] it=398000, loss=24.9556
+[Epoch 2021] it=400000, loss=27.9645
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7651
+[Epoch 2031] it=402000, loss=27.2022
+[Epoch 2041] it=404000, loss=23.0557
+Visualizing
+[Epoch 2051] it=406000, loss=25.6194
+[Epoch 2061] it=408000, loss=19.7692
+[Epoch 2071] it=410000, loss=22.4360
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7647
+[Epoch 2081] it=412000, loss=22.5789
+[Epoch 2091] it=414000, loss=36.0215
+Visualizing
+[Epoch 2101] it=416000, loss=21.4576
+[Epoch 2111] it=418000, loss=22.4404
+[Epoch 2122] it=420000, loss=24.8875
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7664
+[Epoch 2132] it=422000, loss=28.4145
+[Epoch 2142] it=424000, loss=25.6789
+Visualizing
+[Epoch 2152] it=426000, loss=30.4922
+[Epoch 2162] it=428000, loss=24.3921
+[Epoch 2172] it=430000, loss=22.8683
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7633
+[Epoch 2182] it=432000, loss=21.7341
+[Epoch 2192] it=434000, loss=19.5640
+Visualizing
+[Epoch 2202] it=436000, loss=21.7670
+[Epoch 2212] it=438000, loss=26.2428
+[Epoch 2223] it=440000, loss=24.6474
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7597
+[Epoch 2233] it=442000, loss=22.1173
+[Epoch 2243] it=444000, loss=26.0661
+Visualizing
+[Epoch 2253] it=446000, loss=19.6609
+[Epoch 2263] it=448000, loss=20.0364
+[Epoch 2273] it=450000, loss=27.4772
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7686
+[Epoch 2283] it=452000, loss=26.3876
+[Epoch 2293] it=454000, loss=22.0572
+Visualizing
+[Epoch 2303] it=456000, loss=23.6428
+[Epoch 2313] it=458000, loss=26.0386
+[Epoch 2324] it=460000, loss=32.2847
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7707
+New best model (loss 0.7707)
+[Epoch 2334] it=462000, loss=25.9530
+[Epoch 2344] it=464000, loss=16.4863
+Visualizing
+[Epoch 2354] it=466000, loss=23.9777
+[Epoch 2364] it=468000, loss=24.9494
+[Epoch 2374] it=470000, loss=21.9591
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7738
+New best model (loss 0.7738)
+[Epoch 2384] it=472000, loss=16.8836
+[Epoch 2394] it=474000, loss=22.8391
+Visualizing
+[Epoch 2404] it=476000, loss=26.2874
+[Epoch 2414] it=478000, loss=22.9940
+[Epoch 2425] it=480000, loss=22.5818
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7683
+[Epoch 2435] it=482000, loss=21.9497
+[Epoch 2445] it=484000, loss=22.8508
+Visualizing
+[Epoch 2455] it=486000, loss=25.4191
+[Epoch 2465] it=488000, loss=25.3343
+[Epoch 2475] it=490000, loss=20.8510
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7655
+[Epoch 2485] it=492000, loss=22.3194
+[Epoch 2495] it=494000, loss=21.5554
+Visualizing
+[Epoch 2505] it=496000, loss=21.9529
+[Epoch 2515] it=498000, loss=22.8556
+[Epoch 2526] it=500000, loss=26.1389
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7739
+New best model (loss 0.7739)
+[Epoch 2536] it=502000, loss=24.3544
+[Epoch 2546] it=504000, loss=25.2330
+Visualizing
+[Epoch 2556] it=506000, loss=20.3804
+[Epoch 2566] it=508000, loss=20.9708
+[Epoch 2576] it=510000, loss=24.3425
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7666
+[Epoch 2586] it=512000, loss=24.5718
+[Epoch 2596] it=514000, loss=20.3500
+Visualizing
+[Epoch 2606] it=516000, loss=26.8822
+[Epoch 2616] it=518000, loss=20.9759
+[Epoch 2627] it=520000, loss=19.9049
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7723
+[Epoch 2637] it=522000, loss=24.7569
+[Epoch 2647] it=524000, loss=29.7285
+Visualizing
+[Epoch 2657] it=526000, loss=27.2222
+[Epoch 2667] it=528000, loss=24.0938
+[Epoch 2677] it=530000, loss=24.5497
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7719
+[Epoch 2687] it=532000, loss=24.4231
+[Epoch 2697] it=534000, loss=22.9893
+Visualizing
+[Epoch 2707] it=536000, loss=28.9018
+[Epoch 2718] it=538000, loss=31.0571
+[Epoch 2728] it=540000, loss=21.0543
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7696
+[Epoch 2738] it=542000, loss=22.8312
+[Epoch 2748] it=544000, loss=24.7005
+Visualizing
+[Epoch 2758] it=546000, loss=30.0247
+[Epoch 2768] it=548000, loss=31.3759
+[Epoch 2778] it=550000, loss=22.5764
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7647
+[Epoch 2788] it=552000, loss=20.1565
+[Epoch 2798] it=554000, loss=30.5620
+Visualizing
+[Epoch 2808] it=556000, loss=26.7864
+[Epoch 2819] it=558000, loss=20.6972
+[Epoch 2829] it=560000, loss=19.2363
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7696
+[Epoch 2839] it=562000, loss=16.9450
+[Epoch 2849] it=564000, loss=17.3714
+Visualizing
+[Epoch 2859] it=566000, loss=18.6433
+[Epoch 2869] it=568000, loss=18.3086
+[Epoch 2879] it=570000, loss=25.9245
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7701
+[Epoch 2889] it=572000, loss=25.0812
+[Epoch 2899] it=574000, loss=21.5477
+Visualizing
+[Epoch 2909] it=576000, loss=17.1224
+[Epoch 2920] it=578000, loss=22.9150
+[Epoch 2930] it=580000, loss=17.8869
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7734
+[Epoch 2940] it=582000, loss=29.4072
+[Epoch 2950] it=584000, loss=23.9037
+Visualizing
+[Epoch 2960] it=586000, loss=19.1765
+[Epoch 2970] it=588000, loss=21.0999
+[Epoch 2980] it=590000, loss=20.4733
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7701
+[Epoch 2990] it=592000, loss=21.1095
+[Epoch 3000] it=594000, loss=27.8768
+Visualizing
+[Epoch 3010] it=596000, loss=28.3023
+[Epoch 3021] it=598000, loss=25.0969
+[Epoch 3031] it=600000, loss=18.6694
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7701
+[Epoch 3041] it=602000, loss=23.4744
+[Epoch 3051] it=604000, loss=18.1350
+Visualizing
+[Epoch 3061] it=606000, loss=19.8083
+[Epoch 3071] it=608000, loss=24.8102
+[Epoch 3081] it=610000, loss=17.6273
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7661
+[Epoch 3091] it=612000, loss=22.4098
+[Epoch 3101] it=614000, loss=23.1561
+Visualizing
+[Epoch 3111] it=616000, loss=21.1278
+[Epoch 3122] it=618000, loss=19.2981
+[Epoch 3132] it=620000, loss=23.2976
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7707
+[Epoch 3142] it=622000, loss=22.2712
+[Epoch 3152] it=624000, loss=22.5773
+Visualizing
+[Epoch 3162] it=626000, loss=22.9311
+[Epoch 3172] it=628000, loss=23.9759
+[Epoch 3182] it=630000, loss=25.1700
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7715
+[Epoch 3192] it=632000, loss=17.1112
+[Epoch 3202] it=634000, loss=24.2997
+Visualizing
+[Epoch 3212] it=636000, loss=20.4799
+[Epoch 3223] it=638000, loss=16.0504
+[Epoch 3233] it=640000, loss=23.0194
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7727
+[Epoch 3243] it=642000, loss=21.5403
+[Epoch 3253] it=644000, loss=28.7513
+Visualizing
+[Epoch 3263] it=646000, loss=21.4220
+[Epoch 3273] it=648000, loss=22.3552
+[Epoch 3283] it=650000, loss=25.0616
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7740
+New best model (loss 0.7740)
+[Epoch 3293] it=652000, loss=17.2879
+[Epoch 3303] it=654000, loss=21.4586
+Visualizing
+[Epoch 3313] it=656000, loss=25.5961
+[Epoch 3324] it=658000, loss=17.9271
+[Epoch 3334] it=660000, loss=23.3538
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7734
+[Epoch 3344] it=662000, loss=19.0479
+[Epoch 3354] it=664000, loss=23.1233
+Visualizing
+[Epoch 3364] it=666000, loss=24.4463
+[Epoch 3374] it=668000, loss=14.1439
+[Epoch 3384] it=670000, loss=16.9962
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7765
+New best model (loss 0.7765)
+[Epoch 3394] it=672000, loss=25.3038
+[Epoch 3404] it=674000, loss=16.4603
+Visualizing
+[Epoch 3414] it=676000, loss=20.2946
+[Epoch 3425] it=678000, loss=27.8873
+[Epoch 3435] it=680000, loss=23.1791
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7676
+[Epoch 3445] it=682000, loss=17.1754
+[Epoch 3455] it=684000, loss=17.7183
+Visualizing
+[Epoch 3465] it=686000, loss=20.2034
+[Epoch 3475] it=688000, loss=18.6698
+[Epoch 3485] it=690000, loss=20.6551
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7701
+[Epoch 3495] it=692000, loss=20.8485
+[Epoch 3505] it=694000, loss=20.9422
+Visualizing
+[Epoch 3515] it=696000, loss=23.9258
+[Epoch 3526] it=698000, loss=17.1706
+[Epoch 3536] it=700000, loss=19.3639
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7724
+[Epoch 3546] it=702000, loss=20.8002
+[Epoch 3556] it=704000, loss=23.2912
+Visualizing
+[Epoch 3566] it=706000, loss=25.4336
+[Epoch 3576] it=708000, loss=22.4833
+[Epoch 3586] it=710000, loss=22.3068
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7725
+[Epoch 3596] it=712000, loss=19.0813
+[Epoch 3606] it=714000, loss=20.6046
+Visualizing
+[Epoch 3616] it=716000, loss=35.1823
+[Epoch 3627] it=718000, loss=23.2636
+[Epoch 3637] it=720000, loss=20.6763
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7693
+[Epoch 3647] it=722000, loss=25.0509
+[Epoch 3657] it=724000, loss=22.5725
+Visualizing
+[Epoch 3667] it=726000, loss=30.6194
+[Epoch 3677] it=728000, loss=23.3713
+[Epoch 3687] it=730000, loss=19.4972
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7739
+[Epoch 3697] it=732000, loss=25.4077
+[Epoch 3707] it=734000, loss=19.9963
+Visualizing
+[Epoch 3718] it=736000, loss=21.9685
+[Epoch 3728] it=738000, loss=27.2953
+[Epoch 3738] it=740000, loss=20.6883
+Visualizing
+Saving checkpoint
+Backup checkpoint
+Validation metric (iou): 0.7751
+[Epoch 3748] it=742000, loss=33.0731
+[Epoch 3758] it=744000, loss=22.5685
+Visualizing
+[Epoch 3768] it=746000, loss=24.0825
+[Epoch 3778] it=748000, loss=20.6229
+[Epoch 3788] it=750000, loss=27.2597
+Visualizing
+Saving checkpoint
+Validation metric (iou): 0.7704
+[Epoch 3798] it=752000, loss=18.4186
+[Epoch 3808] it=754000, loss=19.8228
+User defined signal 2

@@ -1,0 +1,60 @@
+method: onet
+data:
+  classes: ['rooms_05']
+  input_type: pointcloud
+  path: data/RoomDataset3
+  watertight_path: data/watertight
+  pointcloud_n: 10000
+  pointcloud_noise: 0.005
+  points_subsample: 2048 
+  points_online_sample: False
+  points_file: points_iou
+  points_iou_file: points_iou
+  pointcloud_file: pointcloud
+  multi_files: 10
+  voxels_file: null
+  overfit: False
+  overfit_num: 0
+  padding: 0.1
+model:
+  encoder_latent: null
+  decoder: simple_local
+  encoder: #pointnet_resnet_local #null
+  encoder_latent: pointnet # null #simple
+  encoder_kwargs:
+    hidden_dim: 128
+    plane_resolution: 128
+    plane_type: ['xz', 'xy', 'yz']
+    unet: True
+    unet_kwargs:
+      depth: 5
+      merge_mode: concat
+      start_filts: 32
+  decoder_kwargs:
+    sample_mode: bilinear # bilinear / nearest
+  c_dim: 0
+  z_dim: 32 #128
+training:
+  out_dir: out/michael_tests/generative_model3
+  batch_size: 32
+  #model_selection_metric: loss
+  #model_selection_mode: maximize
+  print_every: 10
+  visualize_every: 10000
+  validate_every: 5000
+  checkpoint_every: 200
+  backup_every: 20000
+  beta_vae: 0.01
+test:
+  threshold: 0.2
+  eval_mesh: true
+  eval_pointcloud: false
+  model_file: model.pt
+generation:
+  batch_size: 100000
+  vis_n_outputs: 5
+  resolution_0: 64
+  refine: false
+  n_x: 128
+  n_z: 1
+  use_sampling: True

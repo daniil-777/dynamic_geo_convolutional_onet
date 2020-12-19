@@ -1,0 +1,36 @@
+method: onet
+data:
+  input_type: pointcloud
+  path: /Volumes/Ubuntu/occupancy_networks/data/ShapeNet
+  pointcloud_n: 10
+  pointcloud_noise: 0.005
+  points_subsample: 10
+model:
+  encoder_latent: null
+  decoder: sphere
+  decoder_kwargs:
+    meridian: 96
+    latitude: 96
+    interpolation: one_sphere
+  encoder: sphere_height_net
+  encoder_kwargs:
+    hidden_dim: 32
+    n_channels: 4
+    meridian: 96
+    latitude: 96
+  c_dim: 35
+  z_dim: 0
+training:
+  out_dir:  out/pointcloud/dpoc
+  batch_size: 32
+  model_selection_metric: iou
+  model_selection_mode: maximize
+test:
+  threshold: 0.2
+  eval_mesh: true
+  eval_pointcloud: false
+generation:
+  batch_size: 100000
+  refine: false
+  n_x: 128
+  n_z: 1

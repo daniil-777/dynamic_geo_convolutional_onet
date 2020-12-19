@@ -1,0 +1,28 @@
+method: onet
+data:
+  input_type: pointcloud
+  path: data/RoomDataset5
+  watertight_path: data/watertight
+  points_file: points_iou
+  points_iou_file: points_iou
+  pointcloud_file: pointcloud
+  pointcloud_chamfer_file: pointcloud
+  multi_files: 10
+  voxels_file: null
+  overfit: False
+  overfit_num: 0
+  padding: 0.1
+  pointcloud_n: 10000
+  pointcloud_noise: 0.005
+  points_subsample: 2048 
+  points_online_sample: False
+  # psr_method: trim
+  # psr_trim_factor: 0
+  psr_method: normal
+model:
+  encoder: null
+  encoder_latent: null
+  c_dim: 0
+  z_dim: 0
+training:
+  out_dir: out/screened_psr_10k_dataset5_no_trim2
